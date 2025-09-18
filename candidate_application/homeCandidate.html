@@ -1,0 +1,2810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENSRV</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="csrf-token" content="Nha3gNRMzOnnxUbaCWdiXwvEIo7yec9ke28bsKYx"> <!-- CSRF Token -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <!-- Bootstrap 5.1.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <!-- FullCalendar CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/main.min.css">
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://mohamed-mahrous.com/assets/css/dashboard.css">
+    <!--<link rel="stylesheet" href="https://mohamed-mahrous.com/assets/css/KPI.css">-->
+    
+    
+    
+
+    <!-- OG Meta Tags -->
+    <meta property="og:site_name" content=""/>
+    <meta property="og:site" content=""/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="article"/>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://mohamed-mahrous.com/assets/site/img/favicon.png" type="image/png" sizes="16x16">
+
+    <!-- Inline Styles -->
+    <style>
+        input[type="radio"] {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid black;
+            border-radius: 50%;
+            outline: none;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        input[type="radio"]:checked {
+            background-color: #0F3464;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        input[type="radio"] {
+            display: inline-block;
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+
+        input[list] {
+            border: 2px solid #3a54a8;
+            padding: 5px;
+            border-radius: 4px;
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .mart-btn {
+            width: 200px !important;
+            opacity: 1 !important;
+            margin-bottom: 20px;
+            background-color: #f2f2f2;
+            border-color: #f2f2f2;
+            color: #3a54a8;
+            font-weight: bold;
+        }
+
+        .btn-danger {
+            color: #fff !important;
+            background-color: #f73757 !important;
+            border-color: #f73757 !important;
+        }
+
+        .solid-btn {
+            color: #fff;
+            -webkit-box-shadow: 0 5px 12px 0 #3a54a8;
+            box-shadow: 0 5px 12px 0 #3a54a8;
+            background: #3a54a8;
+            border: 2px solid #3a54a8;
+            border-radius: 30px;
+        }
+    </style>
+    <style>
+        /*Finalize kpi*/
+        * {
+            font-family: 'Cairo', sans-serif !important
+        }
+
+        .Third_Section_For_Employee label {
+            font-size: 16px !important;
+            position: relative;
+            top: -4px;
+        }
+    </style>
+        <link rel="stylesheet" href="../assets/css/recruitment_management.css" />
+    <link rel="stylesheet" href="https://mohamed-mahrous.com/assets/css/candidates.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+        .iconTable, .TitleTablebtn, .addRowTable {
+            display: none !important;
+        }
+        
+        .th_td_last_child table {
+            display: table !important;
+        }
+        .total_salary_tr .form-control:disabled, .total_salary_tr .form-control[readonly] {
+            background-color: transparent;
+            opacity: 1;
+            border: transparent;
+        }
+        .form-control{
+            font-size: 14px !important;
+        }
+        .LeaveTap_section .accordion .accordion-item .accordion-content.open{
+            max-height: fit-content !important;
+        }
+        .LeaveTap_section .accordion .accordion-item .accordion-content .comments-section label{
+            font-size: 14px !important;
+        }
+        .LeaveTap_section .accordion .accordion-item .accordion-content .comments-section{
+            text-align: left !important;
+        }
+    </style>
+<script src="https://localhost:49506/8ee4ea609a6346c4cf34c2b621ac79ba.js?nc=NTI4NDI5"></script>
+<script src="https://localhost:49506/desktop_inpage_script.js?nc=NTI4NDI5"></script>
+</head>
+<body>
+<div id="sideBar" class="sidebar">
+    <ul>
+        <li class="open">
+            <a href="#">
+                <div class="image-dark home-dark image">
+                    <img src="https://mohamed-mahrous.com/assetsV3/images/sign-in/Home@3x.png" alt="icon">
+                </div>
+                <div class="image-light home-light active image">
+                    <img src="https://mohamed-mahrous.com/assetsV3/images/sign-in/Home-light@3x-3.png" alt="icon">
+                </div>
+            </a>
+            <span>Home</span>
+        </li>
+        <li>
+            <a href="#">
+                <div class="image-dark employee-dark active image">
+                    <img src="https://mohamed-mahrous.com/assetsV3/images/sign-in/Home@3x-5.png" alt="icon">
+                </div>
+                <div class="image-light employee-light image">
+                    <img src="https://mohamed-mahrous.com/assetsV3/images/sign-in/Home-light@3x-2.png" alt="icon">
+                </div>
+            </a>
+            <span>Requests</span>
+        </li>
+        <li>
+            <a href="#">
+                <div class="image-dark hrStaff-dark active image">
+                    <img src="https://mohamed-mahrous.com/assetsV3/images/sign-in/Home@3x-1.png" alt="icon">
+                </div>
+                <div class="image-light hrStaff-light image">
+                    <img src="https://mohamed-mahrous.com/assetsV3/images/sign-in/Home-light@3x-4.png" alt="icon">
+                </div>
+            </a>
+            <span>HR Staff</span>
+        </li>
+        <li>
+            <a href="#">
+                <div class="image-dark calendar-dark active image">
+                    <img src="https://mohamed-mahrous.com/assetsV3/images/sign-in/Home@3x-4.png" alt="icon">
+                </div>
+                <div class="image-light calendar-light image">
+                    <img src="https://mohamed-mahrous.com/assetsV3/images/sign-in/Home-light@3x-1.png" alt="icon">
+                </div>
+            </a>
+            <span>News</span>
+        </li>
+        <li>
+            <a href="#">
+                <div class="image-dark settings-dark active image">
+                    <img src="https://mohamed-mahrous.com/assetsV3/images/sign-in/Home@3x-2.png" alt="icon">
+                </div>
+                <div class="image-light settings-light image">
+                    <img src="https://mohamed-mahrous.com/assetsV3/images/sign-in/Home-light@3x-5.png" alt="icon">
+                </div>
+            </a>
+            <span>Settings</span>
+        </li>
+    </ul>
+</div>
+<div id="openslider" class="openslider">
+    <div id="home" class="home open sectionslider">
+        <a class="title" href="https://mohamed-mahrous.com/employee">
+            <h2 class="order-2 order-md-1">
+                Home
+            </h2>
+            <div class="image order-1 order-md-2">
+                <img src="https://mohamed-mahrous.com/assetsV3/images/sign-in/Home-light@3x-3.png" alt="icon">
+            </div>
+        </a>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div id="employee" class="employee sectionslider">
+        <div class="title">
+            <h2 class="order-2 order-md-1">
+                Requests
+            </h2>
+            <div class="image order-1 order-md-2">
+                <img src="https://mohamed-mahrous.com/assetsV3/images/sign-in/Home-light@3x-2.png" alt="icon">
+            </div>
+        </div>
+        <ul>
+            <li><a href="https://mohamed-mahrous.com/employee/index">KPI <span>0</span> </a></li>
+            <li><a href="https://mohamed-mahrous.com/employee/certificate">Personal Certificate
+                    <span>0</span> </a></li>
+            <li><a href="https://mohamed-mahrous.com/employee/leaves">Leave Requests
+                    <span>0</span> </a></li>
+            <li><a href="https://mohamed-mahrous.com/employee/HrExpenses/hr_index">HR Expenses From
+                    <span>0</span> </a></li>
+            <li>
+                <form id="designationForm" action="https://mohamed-mahrous.com/employee/getDesignation" method="POST"
+                      style="display:inline">
+                    <input type="hidden" name="_token" value="Nha3gNRMzOnnxUbaCWdiXwvEIo7yec9ke28bsKYx" autocomplete="off">                    <a href="#" style="cursor: pointer" onclick="document.getElementById('designationForm').submit();">
+                        Job Description
+                        <span>
+                                <p>0</p>
+                            </span>
+                    </a>
+                </form>
+            </li>
+        </ul>
+    </div>
+    <div id="hrStaff" class="hrStaff sectionslider">
+        <div class="title">
+            <h2 class="order-2 order-md-1" style="padding-inline-start: 15px;">
+                HR Staff
+            </h2>
+            <div class="image order-1 order-md-2">
+                <img src="https://mohamed-mahrous.com/assetsV3/images/sign-in/Home-light@3x-1.png" alt="icon">
+            </div>
+        </div>
+        <ul>
+            <li><a href="https://mohamed-mahrous.com/employee/welcomeNote/list">Welcome Note
+                    <span>0</span> </a></li>
+            <li><a href="https://mohamed-mahrous.com/employee/letters">Separation
+                    Letter<span>0</span> </a></li>
+            <li><a href="#">Confirmation Letter <span>12</span> </a></li>
+        </ul>
+    </div>
+    <div id="calendar" class="calendar sectionslider">
+        <div class="title">
+            <h2 class="order-2 order-md-1">
+                News
+            </h2>
+            <div class="image order-1 order-md-2">
+                <img src="https://mohamed-mahrous.com/assetsV3/images/sign-in/Home-light@3x-4.png" alt="icon">
+            </div>
+        </div>
+        <div class="p-5">
+                            <div class="col-sm-12 b-2">
+                    <div class="img-fluid">
+                        <img src="https://mohamed-mahrous.com/assets/images/1728806444_1.HR 360 Platform Ensrv.mp4" alt="KPI HR 360 Platform"
+                             style="height:150px!important;width:100%">
+                    </div>
+                    <div class="text_news_prag text-center mt-4">
+                        <h3>KPI HR 360 Platform</h3>
+                        <p class="pt-1">This video guides you through the steps to submit, review, and approve KPIs on the KPI HR 360 platform, ensuring an efficient and smooth process.</p>
+                    </div>
+                </div>
+                            <div class="col-sm-12 b-2">
+                    <div class="img-fluid">
+                        <img src="https://mohamed-mahrous.com/assets/images/1740303846_Safe lifts.png" alt="Safe lifts: equipment, inspection, posture, communication, risk assessment."
+                             style="height:150px!important;width:100%">
+                    </div>
+                    <div class="text_news_prag text-center mt-4">
+                        <h3>Safe lifts: equipment, inspection, posture, communication, risk assessment.</h3>
+                        <p class="pt-1">Safe lifts, prioritize.</p>
+                    </div>
+                </div>
+                            <div class="col-sm-12 b-2">
+                    <div class="img-fluid">
+                        <img src="https://mohamed-mahrous.com/assets/images/1742733125_time.png" alt="Punctuality reflects respect for commitments."
+                             style="height:150px!important;width:100%">
+                    </div>
+                    <div class="text_news_prag text-center mt-4">
+                        <h3>Punctuality reflects respect for commitments.</h3>
+                        <p class="pt-1">Punctuality reflects respect, responsibility, and commitment to obligations.</p>
+                    </div>
+                </div>
+                    </div>
+    </div>
+    <div id="settings" class="settings sectionslider">
+        <div class="title">
+            <h2 class="order-2 order-md-1">
+                Settings
+            </h2>
+            <div class="image order-1 order-md-2">
+                <img src="https://mohamed-mahrous.com/assetsV3/images/sign-in/Home-light@3x-5.png" alt="icon">
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="https://mohamed-mahrous.com/employee/edit_photo" id="edit">
+                    <div class="iconSetting" id="editicon">
+                        <i class="fa-solid fa-camera-retro"></i>
+                    </div>
+                    <p id="editphoto">
+                        Edit Photo
+                    </p>
+                </a>
+            </li>
+            <li>
+                <form id="logoutForm" action="https://mohamed-mahrous.com/logout" method="POST" style="display:inline">
+                    <input type="hidden" name="_token" value="Nha3gNRMzOnnxUbaCWdiXwvEIo7yec9ke28bsKYx" autocomplete="off">                    <a href="#" style="cursor: pointer" onclick="document.getElementById('logoutForm').submit();">
+                        <div class="iconSetting" id="iconlog">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </div>
+                        <p id="logout">Log out</p>
+                    </a>
+                </form>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<button id="openBtn" class="open-btn active" onclick="openSidebar()">
+    <i class="fa-solid fa-bars-staggered"></i>
+</button>
+<button id="closeBtn" class="close-btn" onclick="closeSidebar()">
+    <i class="fa-solid fa-arrow-left"></i>
+</button>
+<div class="overlayOpenSlider" id="overlayOpenSlider" onclick="closeSidebar()"></div><div id="mainContent" class="content ">
+    <header>
+    <div class="logo">
+        <div class="img-fluid">
+                            <img src="https://mohamed-mahrous.com/assetsV3/images/sign-in/Logos@3x.png" alt="logos">
+                    </div>
+        <div class="titleLogo">
+            <p>Medgulf Construction Company W.L.L.</p>
+        </div>
+    </div>
+    <div class="account">
+        <div class="image">
+            <div class="ima-fluid">
+                <img src="https://mohamed-mahrous.com/assets/images/employees/1694698427_Mohamed1.jpg" alt="Personal photo">
+            </div>
+        </div>
+        <div class="name">
+            <p>Mohammed Basil 209</p>
+            <span>TEST</span>
+        </div>
+        <div class="arrow">
+            <div class="ima-fluid">
+                <img onclick="openEdit()" src="https://mohamed-mahrous.com/assetsV3/images/sign-in/Arrow@3x-1.png"
+                     alt="arrow-dowm">
+            </div>
+        </div>
+        <div class="settingAccount">
+            <ul>
+                <li>
+                <a href="https://mohamed-mahrous.com/employee/edit_photo">
+                        <div class="iconAccount">
+                            <i class="fa-solid fa-camera-retro"></i>
+                        </div>
+                        <p>
+                            Edit Photo
+                        </p>
+                    </a>
+                </li>
+                <li>
+                 
+                                                        <a class="">
+                                        <div class="d-flex align-items-center">
+                                           <div class="iconAccount" style="color: #EB0C0C ;">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </div>
+                                            <div class="ms-3">
+                                                <form id="logoutt" action="https://mohamed-mahrous.com/logout" method="POST">
+                                                    <input type="hidden" name="_token" value="Nha3gNRMzOnnxUbaCWdiXwvEIo7yec9ke28bsKYx" autocomplete="off">                                                    <button class=""
+                                                            style="background-color: transparent; width: 100%; height: 100%; text-align: left;font-size:16px"
+                                                            type="submit">
+                                                        Log Out
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>    
+<section class="head">
+    <div class="title">
+        <a href="index.html">
+            <p>Candidate Form</p>
+        </a>
+        <span>|</span>
+        <span>
+                My Request
+        </span>
+    </div>
+    
+    <div class="iconHead d-flex">
+                <a href="https://mohamed-mahrous.com/employee/candidates/create" class=" btn btnExpenses NewExpensesForm">
+            New Candidate Form
+        </a>
+                <a href="employee.html" class="ms-5 image">
+            <div class="img-fluid">
+                <img src="https://mohamed-mahrous.com/assets/images/sign_in/back@3x.png" alt="back arrow">
+            </div>
+        </a>
+    </div>
+</section>
+<section class="Button_Expenses_section ">
+    <div class="btnGrp">
+        <button class="btn btnTableSend btnStaffHead">Staff</button>
+        <button class="btn btnTableSend btnLaborerHead">Laborer</button>
+    </div>
+    <div class="Button_Expenses_section_item">
+                <a href="https://mohamed-mahrous.com/employee/candidate/emp" class="btn btnExpenses">
+            My Requests
+            <span>
+                3
+            </span>
+        </a>
+                <a href="https://mohamed-mahrous.com/employee/candidate/interviewer" class="btn btnExpenses">
+            Interviewers
+            <span>
+                3
+            </span>
+        </a>
+                <a href="https://mohamed-mahrous.com/employee/candidate/hr%20check" class="btn btnExpenses">
+            HR Checked
+            <span>
+                3
+            </span>
+        </a>                            
+                        <a href="https://mohamed-mahrous.com/employee/candidate/immigration" class="btn btnExpenses ">
+            Immigration
+            <span>
+                2
+            </span>
+        </a> 
+                        <a href="https://mohamed-mahrous.com/employee/candidate/hr%20director" class="btn btnExpenses ">
+            HR Director
+            <span>
+                2
+            </span>
+        </a>    
+            </div>
+</section>
+<section class="table_section HRExpensessTable th_td_last_child border-white table_responsev">
+            <!-- <div class="d-flex my-3 TitleTable flex-column flex-md-row justify-content-center">
+        <div class="d-flex justify-content-center">
+            <div class="TitleTableP">
+                <p class="mb-0">
+                                    </p>
+            </div>
+        </div>
+        
+    </div> -->
+        <div class="d-flex my-3 position-relative TitleTable flex-column flex-md-row justify-content-center">
+        <div class="headTableExpenses">
+            <div class="groupFilter">
+            <div class="FilterColums">
+                <select id="statusFilter" class="form-select my-2">
+                <option value="">All Status</option>
+                <option value="pending 1st Interviewer">pending 1st Interviewer</option>
+                <option value="pending 2nd Interviewer">pending 2nd Interviewer</option>
+                <option value="pending 3rd Interviewer">pending 3rd Interviewer</option>
+                <option value="pending 4th Interviewer">pending 4th Interviewer</option>
+                <option value="pending HR Check">pending HR Check</option>
+                <option value="pending Immigration">pending Immigration</option>
+                <option value="pending HR Director">pending HR Director</option>
+                <option value="Return to HR Check">Return to HR Check</option>
+                <option value="Return to Immigration">Return to Immigration</option>
+                <option value="Approved">Approved</option>
+                <option value="Rejected">Rejected</option>
+                </select>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="TitleTableP TitleTablePExpenses TitleTablePExpensesRequests TitleTablePExpensesManpower">
+                <p class="mb-0">Interviewers</p>
+                </div>
+            </div>
+            
+            <div id="navigationButtonsDesignationRequests" class="navigationButtons tablenavigationButtons" >
+                <button onclick="prevHighlight('DesignationRequests')"><i class="fa-solid fa-arrow-left"></i></button>
+                <p><span id="numDesignationRequests"></span>/<span id="totalnumDesignationRequests"></span></p>
+                <button onclick="nextHighlight('DesignationRequests')"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            </div>
+        </div>
+    </div>
+<script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const statusFilter = document.getElementById("statusFilter");
+        const table = document.querySelector("tbody");
+        const rows = table.querySelectorAll("tr");
+
+        statusFilter.addEventListener("change", function () {
+          const selectedStatus = this.value;
+
+          rows.forEach((row) => {
+            const statusCell = row.cells[7];
+            if (!selectedStatus || statusCell.textContent.trim() === selectedStatus) {
+              row.style.display = "table-row";
+            } else {
+              row.style.display = "none";
+            }
+          });
+        });
+      });
+</script> 
+<table id="ExpensesTable" class="w-100 ">
+        <thead>
+            <tr>
+                <th>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p>ID</p>
+                    </div>
+                    
+                </th>
+                <th>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p>Date</p>
+                    </div>
+                    
+                </th>
+                <th>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p>Name</p>
+                    </div>
+                    
+                </th>
+                <th>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p>Nationality</p>
+                    </div>
+                </th>
+                <th>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p>Position Applied for</p>
+                    </div>
+                </th>
+                <th>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p>Department</p>
+                    </div>
+                </th>
+                <th>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p>Contact Number</p>
+                    </div>
+                </th>
+                <th>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p>Email</p>
+                    </div>
+                </th>
+                <th>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p>Interviewers</p>
+                    </div>
+                </th>
+                <th>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p>Status</p>
+                    </div>
+                </th>
+                                                    <th>
+                        <p>
+                            Employee Form
+                        </p>
+                    </th>    
+                    <th>
+                        <p>
+                            Action
+                        </p>
+                    </th>
+                                                                            </tr>
+        </thead>
+        <tbody>
+                                                            <tr class="Evaluated" style="display:table-row ;">
+                        <td>1</td>
+                        <td>2025-08-31 02:04:02</td>
+                        <td>martina</td>
+                        <td>Egyptian</td>
+                        <td>web developer</td>
+                        <td>HR Department</td>
+                        <td>01205916690</td>
+                        <td>Martina@gmail.com</td>
+                        <td>
+                                                                                        1. 101121y - hr1@medgulfconstruction.com
+                                <br>
+                                                                                    </td>
+                        <td>
+                                                            <p class="rating-pill rating-B text-dark mt-3" >
+                                    pending hr director
+                                </p>
+                                                    </td>
+                        <td>
+                                                        <button class="btn btnTra btnEx" onclick="openPopupEmployeeForm(1)">
+                                Show Application
+                            </button>
+                                                    </td>
+                        <td>
+                                                        <button class="btn btnTra btnEx" onclick="openPopupInterviewEvaluation(1,1)">
+                                Evaluate
+                            </button>
+                                                    </td>
+                    </tr>
+                                    <tr class="Evaluated" style="display:table-row ;">
+                        <td>2</td>
+                        <td>2025-08-31 13:03:49</td>
+                        <td>karim ali</td>
+                        <td>Pakistani</td>
+                        <td>ADMIN</td>
+                        <td>Human Resources Department</td>
+                        <td>333933081</td>
+                        <td>mahrousm200@gmail.com</td>
+                        <td>
+                                                                                        1. 101121y - hr1@medgulfconstruction.com
+                                <br>
+                                                                                    </td>
+                        <td>
+                                                            <p class="rating-pill rating-C text-dark mt-3" >
+                                    Return to HR Director
+                                </p>
+                                                    </td>
+                        <td>
+                                                        <button class="btn btnTra btnEx" onclick="openPopupEmployeeForm(2)">
+                                Show Application
+                            </button>
+                                                    </td>
+                        <td>
+                                                        <button class="btn btnTra btnEx" onclick="openPopupInterviewEvaluation(2,1)">
+                                Evaluate
+                            </button>
+                                                    </td>
+                    </tr>
+                                    <tr class="Evaluated" style="display:table-row ;">
+                        <td>3</td>
+                        <td>2025-08-31 13:38:40</td>
+                        <td>khaled kamal</td>
+                        <td>Egyptian</td>
+                        <td>pharms</td>
+                        <td>ZF-083R- Road safety retrofit programme stage 4B</td>
+                        <td>333933081</td>
+                        <td>mahrousm200@gmail.com</td>
+                        <td>
+                                                                                        1. 101121y - hr1@medgulfconstruction.com
+                                <br>
+                                                                                            2. 6562 - tt@medgulfconstruction.com
+                                <br>
+                                                                                    </td>
+                        <td>
+                                                            <p class="rating-pill rating-B text-dark mt-3" >
+                                    pending HR Check
+                                </p>
+                                                    </td>
+                        <td>
+                                                        <button class="btn btnTra btnEx" onclick="openPopupEmployeeForm(3)">
+                                Show Application
+                            </button>
+                                                    </td>
+                        <td>
+                                                        <button class="btn btnTra btnEx" onclick="openPopupInterviewEvaluation(3,1)">
+                                pending HR Check
+                            </button>
+                                                    </td>
+                    </tr>
+                                                                        </tbody>
+    </table>
+    
+    
+</section>
+    <div class="popupEmployeeForm">
+        <div class="popup-content popupEX-content" style="width: 85%;">
+            
+            <div class="my-2 overflow-hidden table_responsev">
+            <div class="" style="width: 100%;">
+                <div class="img-fluid" style="width: 100%;">
+                    <img src="https://mohamed-mahrous.com/assets/images/logos/header.png" alt="header" style="width: 100%;" />
+                </div>
+            </div>
+                <span class="close" onclick="closePopupEmployeeForm()">&times;</span>
+                <!-- <div class="d-flex  TitleTable flex-column flex-md-row justify-content-center">
+                    <div class="d-flex justify-content-center">
+                        <div class="TitleTableP">
+                            <h3 class="m-4" style="font-weight: 600;">
+                                Employee Form
+                            </h3>
+                        </div>
+                    </div>
+                    
+                </div> -->
+                
+                <article class="LeaveTap_section container">
+            
+
+                    <section class="LeaveTap_section">
+                        <div class="accordion row">
+                            
+                            <div class="col-12">
+                                <div class="row">
+
+                                <div class="col-12">
+                                    <div class="accordion-item row">
+                                        <div class="col-12">
+                                            <h2 class="m-5" style="text-align: center; color: var(--main-blue-color); font-weight: 600;">Candidate Application</h2>
+                                        </div>
+                                        <div class="accordion-content accordion-content-border col-12 col-md-6 filter_section my-0 leaveReqPadd open" >
+                                            <input type="hidden" name="application_id" id="application_id">
+                                            <div class="comments-section">
+                                                <label>Position Applied for:</label>
+                                                <input class="comments" type="text" name="position_applied_for" id="position_applied_for" value="" disabled />
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <h2 style="text-align: center; color: var(--main-blue-color); font-weight: 600; font-size: 18px; text-decoration: underline;">GENERAL INFORMATION</h2>
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label>Name:</label>
+                                                <input class="comments" type="text" name="name" id="name" value="" disabled />
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label>Nationality / Passport Info:</label>
+                                                <div class="d-flex flex-row gap-2" style="justify-content: space-around;">
+                                                <input class="comments" type="text" id="nationality" value="" disabled />
+                                                <input class="comments" type="text" id="passport_number" value="" disabled />
+                                                <input class="comments" type="text" id="passport_expiry_date" value="" disabled />
+                                                </div>
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label>Date of Birth:</label>
+                                                <input class="comments" type="text" id="date_of_birth" value="" disabled />
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label>Marital Status:</label>
+                                                <input class="comments" type="text" id="marital_status" value="" disabled />
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label>Current Location:</label>
+                                                <input class="comments" type="text" id="current_location" value="" disabled />
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label>Qatar Residency Permit Available:</label>
+                                                <div class="d-flex SelectionsDiv">
+                                                <div class="form-check d-flex flex-row gap-2 me-4 p-2" style="border-radius: 5px;">
+                                                <input
+                                                    class="form-check-input-comments"
+                                                    type="radio"
+                                                    id="has_residency_yes"
+                                                    name="has_residency"
+                                                    value="yes"
+                                                    disabled
+                                                />
+                                                <label for="has_residency_yes" class="form-check-label" style="color:black!important;">Yes</label>
+                                                </div>
+
+                                                <div class="form-check d-flex flex-row gap-2 p-2" style="border-radius: 5px;">
+                                                <input
+                                                    class="form-check-input-comments"
+                                                    type="radio"
+                                                    id="has_residency_no"
+                                                    name="has_residency"
+                                                    value="no"
+                                                    disabled
+                                                />
+                                                <label for="has_residency_no" class="form-check-label" style="color:black!important;">No</label>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="comments-section" id="residency_status_container">
+                                            </div>
+                                            <div class="comments-section" id="residency_status_other_container">
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label>Contact Number:</label>
+                                                <input class="comments" type="text" id="contact_number" value="" disabled />
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label>Email:</label>
+                                                <input class="comments" type="text" id="email" value="" disabled />
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label>Driving Licence (if available):</label>
+                                                <div class="d-flex SelectionsDiv">
+                                                <div class="form-check d-flex flex-row gap-2 me-4 p-2" style="border-radius: 5px;">
+                                                <input
+                                                    class="form-check-input-comments"
+                                                    type="radio"
+                                                    id="driving_license_yes"
+                                                    name="driving_license"
+                                                    value="yes"
+                                                    disabled
+                                                />
+                                                <label for="driving_license_yes" class="form-check-label" style="color:black!important;">Yes</label>
+                                                </div>
+
+                                                <div class="form-check d-flex flex-row gap-2 p-2" style="border-radius: 5px;">
+                                                <input
+                                                    class="form-check-input-comments"
+                                                    type="radio"
+                                                    id="driving_license_no"
+                                                    name="driving_license"
+                                                    value="no"
+                                                    disabled
+                                                />
+                                                <label for="driving_license_no" class="form-check-label" style="color:black!important;">No</label>
+                                                </div>
+                                            </div>
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label>Languages Spoken:</label>
+                                                <div class="d-flex flex-row gap-2">
+                                                    <input class="comments" type="text" id="language_1" value="" disabled />
+                                                    <input class="comments" type="text" id="language_2" value="" disabled />
+                                                    <input class="comments" type="text" id="language_3" value="" disabled />
+                                                </div>
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label>Highest Education Degree:</label>
+                                                <input class="comments" type="text" id="education" value="" disabled />
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label>Total Years of Experience / GCC Experience:</label>
+                                                <div class="d-flex flex-row gap-4">
+                                                    <input class="comments" type="text" id="experience_total" value="" disabled />
+                                                    <input class="comments" type="text" id="experience_gcc" value="" disabled />
+                                                </div>
+                                            </div>
+                                            <!-- Current Employment Details -->
+                                        <div class="comments-section">
+                                            <h2 style="text-align: center; color: var(--main-blue-color); font-weight: 600; font-size: 18px; text-decoration: underline;">CURRENT EMPLOYMENT DETAILS</h2>
+                                        </div>
+                                        
+                                        <div class="comments-section">
+                                            <label for="job_title">Current Job Title:</label>
+                                            <input class="comments" type="text" name="current_job_title" id="current_job_title" value="" disabled />
+                                        </div>
+                                        <div class="comments-section">
+                                            <label for="employer">Current Employer:</label>
+                                            <input class="comments" type="text" name="current_employer" id="current_employer" value="" disabled />
+                                        </div>
+                                        <div class="comments-section">
+                                            <label>Basic salary:</label>
+                                            <input class="comments" type="number" name="current_basic_salary" id="current_basic_salary" value="" disabled />
+                                        </div>
+                                        <div class="comments-section">
+                                            <label>Accommodation:</label>
+                                            <input class="comments" type="number" name="current_accommodation" id="current_accommodation" value="" disabled />
+                                        </div>
+                                        <div class="comments-section">
+                                            <label>Transportation:</label>
+                                            <input class="comments" type="number" name="current_transportation" id="current_transportation" value="" disabled />
+                                        </div>
+                                        <div class="comments-section">
+                                            <label>Fixed Over Time:</label>
+                                            <input class="comments" type="number" name="current_overtime" id="current_overtime" value="" disabled />
+                                        </div>
+                                        <div class="comments-section">
+                                            <label>Other Allowance:</label>
+                                            <input class="comments" type="number" name="current_other_allowance" id="current_other_allowance" value="" disabled />
+                                        </div>
+                                        <div class="comments-section">
+                                            <label>Special Allowance:</label>
+                                            <input class="comments" type="number" name="current_special_allowance" id="current_special_allowance" value="" disabled />
+                                        </div>
+                                        <div class="comments-section">
+                                            <label>Allowance (if any):</label>
+                                                <input class="comments" type="number" name="current_allowance" id="current_allowance" value="" disabled />
+                                        </div>
+                                            <div class="comments-section">
+                                                <label>Total Salary:</label>
+                                                <input class="comments" type="text" id="current_total_salary" readonly value="" />
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-content col-12 col-md-6 leaveReqPadd open">
+                                                            
+                                            <div class="comments-section">
+                                                <label class="required form-label">Annual Ticket:</label>
+
+                                                <div class="d-flex SelectionsDiv">
+                                                    <div class="form-check d-flex flex-row gap-2 me-4 p-2" style="border-radius: 5px;">
+                                                    <input
+                                                        class="form-check-input-comments"
+                                                        type="radio"
+                                                        id="annual_ticket_self"
+                                                        name="current_ticket"
+                                                        value="Self"
+                                                        disabled
+                                                    />
+                                                    <label for="annual_ticket_self" class="form-check-label" style="color:black!important;">Self</label>
+                                                    </div>
+
+                                                <div class="form-check d-flex flex-row gap-2 p-2" style="border-radius: 5px;">
+                                                <input
+                                                    class="form-check-input-comments"
+                                                    type="radio"
+                                                    id="annual_ticket_family"
+                                                    name="current_ticket"
+                                                    value="Family"
+                                                    disabled    
+                                                />
+                                                <label for="annual_ticket_family" class="form-check-label" style="color:black!important;">Family</label>
+                                                </div>
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Social Status:</label>
+                                                <input class="comments" type="text" name="current_social_status" id="current_social_status" value="" disabled />
+                                            </div>
+                                            
+                                            <div class="comments-section">
+                                                <label>Reasons for leaving Employer:</label>
+                                                <textarea class="comments" type="text" name="current_reasons_leaving" id="current_reasons_leaving" value="" disabled ></textarea>
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Notice Period (if required):</label>
+                                                <input class="comments" type="text" name="current_notice_period" id="current_notice_period"     value="" disabled />
+                                            </div>
+
+                                            <!-- Salary Expectations -->
+                                            <div class="comments-section">
+                                                <h2 style="text-align: center; color: var(--main-blue-color); font-weight: 600; font-size: 18px; text-decoration: underline;">SALARY EXPECTATIONS</h2>
+                                            </div>
+
+                                            <div class="comments-section">
+                                                    <label>Basic salary:</label>
+                                                    <input class="comments" type="number" name="expectations_basic_salary" id="expectations_basic_salary" value="" disabled />
+                                                </div>
+                                                <div class="comments-section">
+                                                    <label>Accommodation:</label>
+                                                    <input class="comments" type="number" name="expectations_accommodation" id="expectations_accommodation" value="" disabled />
+                                                </div>
+                                                <div class="comments-section">
+                                                <label>Transportation:</label>
+                                                <input class="comments" type="number" name="expectations_transportation" id="expectations_transportation" value="" disabled />
+                                                </div>
+                                                <div class="comments-section">
+                                                    <label>Fixed Over Time:</label>
+                                                    <input class="comments" type="number" name="expectations_overtime" id="expectations_overtime" value="" disabled />
+                                                </div>
+                                                <div class="comments-section">
+                                                    <label>Other Allowance:</label>
+                                                    <input class="comments" type="number" name="expectations_other_allowance" id="expectations_other_allowance" value="" disabled />
+                                                </div>
+                                                <div class="comments-section">
+                                                    <label>Special Allowance:</label>
+                                                    <input class="comments" type="number" name="expectations_special_allowance" id="expectations_special_allowance" value="" disabled />
+                                                </div>
+                                                <div class="comments-section">
+                                                    <label>Allowance (if any):</label>
+                                                    <input class="comments" type="number" name="expectations_allowance" id="expectations_allowance" value="" disabled />
+                                                </div>
+                                                <div class="comments-section">
+                                                    <label>Total Salary:</label>
+                                                    <input class="comments" type="text" id="expectations_total_salary" readonly value="" />
+                                                </div>
+
+                                                <div class="comments-section">
+                                                <label class="required form-label">
+                                                    Annual Ticket:
+                                                </label>
+
+                                                <div class="d-flex SelectionsDiv">
+                                                    <div class="form-check d-flex flex-row gap-2 me-4 p-2" style="border-radius: 5px;">
+                                                    <input
+                                                        class="form-check-input-comments"
+                                                        type="radio"
+                                                        value="Self"
+                                                        id="annual_ticket_self1"
+                                                        name="expectations_ticket"
+                                                        disabled
+                                                    />
+                                                    <label for="annual_ticket_self1" class="form-check-label">Self</label>
+                                                    </div>
+
+                                                    <div class="form-check d-flex flex-row gap-2 p-2" style="border-radius: 5px;">
+                                                    <input
+                                                        class="form-check-input-comments"
+                                                        type="radio"
+                                                        value="Family"
+                                                        id="annual_ticket_family1"
+                                                        name="expectations_ticket"
+                                                        disabled
+                                                    />
+                                                    <label for="annual_ticket_family1" class="form-check-label">Family</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Social Status:</label>
+                                                    <input class="comments" type="text" name="expectations_social_status" id="expectations_social_status" value="" disabled />
+                                            </div>
+
+                                            <!-- References -->
+                                            <div class="comments-section">
+                                                <h2 style="text-align: center; color: var(--main-blue-color); font-weight: 600; font-size: 18px; text-decoration: underline;">REFERENCES</h2>
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label>Contact Name & Details:</label>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <input class="comments mb-2" type="text" id="ref_name_1" value="" disabled />
+                                                        <input class="comments mb-2" type="text" id="ref_name_2" value="" disabled />
+                                                        <input class="comments mb-2" type="text" id="ref_name_3" value="" disabled />
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input class="comments mb-2" type="text" id="ref_contact_1" value="" disabled />
+                                                        <input class="comments mb-2" type="text" id="ref_contact_2" value="" disabled />
+                                                        <input class="comments mb-2" type="text" id="ref_contact_3" value="" disabled />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Declaration -->
+                                            <div class="comments-section">
+                                                <h2 style="text-align: center; color: var(--main-blue-color); font-weight: 600; font-size: 18px; text-decoration: underline;">DECLARATION</h2>
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label>Relatives with Medgulf Construction Co?</label>
+                                                <div class="d-flex SelectionsDiv">
+                                                    <div class="form-check d-flex flex-row gap-2 me-4 p-2" style="border-radius: 5px;">
+                                                    <input
+                                                        class="form-check-input-comments"
+                                                        type="radio"
+                                                        value="yes"
+                                                        id="has_relative_yes"
+                                                        name="has_relative_in_company"
+                                                        disabled
+                                                    />
+                                                    <label for="has_relative_yes" class="form-check-label">Yes</label>
+                                                    </div>
+
+                                                    <div class="form-check d-flex flex-row gap-2 p-2" style="border-radius: 5px;">
+                                                    <input
+                                                        class="form-check-input-comments"
+                                                        type="radio"
+                                                        value="no"
+                                                        id="has_relative_no"
+                                                        name="has_relative_in_company"
+                                                        disabled
+                                                    />
+                                                    <label for="has_relative_no" class="form-check-label">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comments-section" id="relative_details_container">
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <h4 style="text-align:center; font-weight:bold;">Uploaded Documents</h4>
+                                                <ul style="list-style-type: none; padding-left: 0; ">
+                                                    <li>
+                                                    <a href="" style="font-size: 14px;" target="_blank">📄 Updated CV</a>
+                                                    </li>
+                                                    <li>
+                                                    <a href="" style="font-size: 14px;" target="_blank">📄 Educational Certificate</a>
+                                                    </li>
+                                                    <li>
+                                                    <a href="" style="font-size: 14px;" target="_blank">📄 Other Certificates</a>
+                                                    </li>
+                                                    <li>
+                                                    <a href="" style="font-size: 14px;" target="_blank">📄 Passport Scan</a>
+                                                    </li>
+                                                    <li>
+                                                    <a href="" style="font-size: 14px;" target="_blank">🖼️ Personal Photo</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="comments-section">
+                                                <label for="comments">Comment</label>
+                                                <textarea class="comments" type="text" name="other_comment_upload" id="other_comment_upload" value="" disabled ></textarea>
+                                            </div>  
+
+                                        </div>
+                                        
+                                    
+                                    </div>
+
+                                </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+          
+                </article>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="popupInterviewEvaluation">
+        
+        <form action="https://mohamed-mahrous.com/employee/candidate/interview-evaluation/store" method="post">
+            <input type="hidden" name="_token" value="Nha3gNRMzOnnxUbaCWdiXwvEIo7yec9ke28bsKYx" autocomplete="off">            <input type="hidden" name="total_salary_interview" id="total_salary_interview" value="">
+        <div class="popup-content popupEX-content" style="width: 85%;">
+            <div class="my-2 overflow-hidden table_responsev">
+            <div class="" style="width: 100%;">
+                <div class="img-fluid" style="width: 100%;">
+                    <img src="https://mohamed-mahrous.com/assets/images/logos/header.png" alt="header" style="width: 100%;" />
+                </div>
+            </div>
+                <span class="close" onclick="closePopupInterviewEvaluation()">&times;</span>
+                <div class="d-flex  TitleTable flex-column flex-md-row justify-content-center">
+                    <div class="d-flex justify-content-center">
+                        <div class="TitleTableP">
+                            <h3 class="m-4" style="font-weight: 600;">
+                                STAFF INTERVIEW EVALUATION FORM
+                            </h3>
+                        </div>
+                    </div>
+                    
+                </div>
+                <input type="hidden" name="candidate_request_id" id="candidate_request_id">
+                <input type="hidden" name="interview_number" id="interview_number">
+                <table class="w-100 mt-2 table-td-border text-left " style="text-align: left !important;">
+                    <tbody>
+                        <tr>
+                            <td style="width: 20%;" class="td-bg-blue">
+                                Candidate Name:
+                            </td>
+                            <td id="interviewee_name">
+                                
+                            </td>
+                            <td style="width: 20%;" class="td-bg-blue">
+                                Contact Number:
+                            </td>
+                            <td id="interviewee_contact_number">
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20%;" class="td-bg-blue">
+                                Department:
+                            </td>
+                            <td id="interviewee_department">
+                                
+                            </td>
+                            <td style="width: 20%;" class="td-bg-blue">
+                                Position:
+                            </td>
+                            <td id="interviewee_position">
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20%;" class="td-bg-blue">
+                                Interview Type:
+                            </td>
+                            <td id="interviewee_interview_type">
+                                <!-- <label>Direct<input type="radio" class="m-0" name="interview_type" value="direct"></label> -->
+                                <!-- <label>In Direct<input type="radio" class="m-0" name="interview_type" value="in_direct"></label> -->
+                            </td>
+                            <td style="width: 20%;" class="td-bg-blue">
+                                CV Source:
+                            </td>
+                            <td id="interviewee_cv_source">
+                                <!-- <label>Locally Available<input type="radio" class="m-0" name="cv_source" value="locally_available"></label>
+                                <label>In Internation<input type="radio" class="m-0" name="cv_source" value="in_internation"></label>
+                                <label>Agency<input type="radio" class="m-0" name="cv_source" value="agency"></label> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <ol class="instructions">
+                                    <li>This form is to be completed by the interviewer to assess the candidate’s qualifications for the position referred to above</li>
+                                    <li>Under each heading, the interviewer should give the candidate rating, and each section has specific weight.</li>
+                                    <li>For work experience, the scale of each item is to be multiplied by 5</li>
+                                    <li>The Evaluation Criteria which cannot be assessed during the interview shall be marked as “N/A” and the rating should be considered based
+                                    on 100 – the rating which is not applicable.</li>
+                                    <li>The numerical rating system is based on below scale.</li>
+                                    <li>Above 71% highly recommend hiring, 50% to 70% are recommended to hire and below 50% not recommended hire.</li>
+                                    <li>If a difference of scoring comes between the interviewer, both scores will be added and decision to be taken based on the final score.</li>
+                                    <li>If any of the section is below50%,hiring will not be processed</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <h3 class="m-4" style="font-weight: 600;">
+                                    Scale:
+                                </h3>
+                                <table class="w-100 mt-2 table-td-border scale-table">
+                                    <tbody>
+                                        <tr>
+                                            <td style="border: none !important;">
+                                                A – Very Good 
+                                                <br>
+                                                (5 Points)
+                                            </td>
+                                            <td style="border: none !important;">
+                                                B – Good 
+                                                <br>
+                                                (4 Points)
+                                            </td>
+                                            <td style="border: none !important;">
+                                                C – Average 
+                                                <br>
+                                                (3 Points)
+                                            </td>
+                                            <td style="border: none !important;">
+                                                D – Below Average 
+                                                <br>
+                                                (2 Points)
+                                            </td>
+                                            <td style="border: none !important;">
+                                                E – Unsatisfactory 
+                                                <br>
+                                                (0 Points)
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <h3 class="m-4" style="font-weight: 600;">
+                                
+                                </h3>
+                                <table class="w-100 mt-2 table-td-border">
+                                    <tbody>
+                                        <tr id="interviewer_header_row">
+                                        </tr>
+                                        <tbody id="sectionA_body"></tbody>
+                                        <tbody id="sectionB_body"></tbody>
+                                        <tbody id="sectionC_body"></tbody>
+                                        <tbody id="sectionD_body"></tbody>
+                                        <tbody id="finalRemarkRow"></tbody>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+                <div id="submitButtonContainer"></div>
+            </div>
+        </div>
+        </form>
+    </div>
+
+    <div class="popupHr">
+        <form action="https://mohamed-mahrous.com/employee/candidate/hr-check/store" method="post" class="confirm-submit" novalidate>
+            <input type="hidden" name="_token" value="Nha3gNRMzOnnxUbaCWdiXwvEIo7yec9ke28bsKYx" autocomplete="off">            
+            <div class="popup-content popupEX-content" style="width: 85%;">
+                <div class="" style="width: 100%;">
+                    <div class="img-fluid" style="width: 100%;">
+                        <img src="https://mohamed-mahrous.com/assets/images/logos/header.png" alt="header" style="width: 100%;" />
+                    </div>
+                </div>
+                <div class="my-2 overflow-hidden table_responsev" id="hr_check_form">
+                    <span class="close" onclick="closePopupHr()">&times;</span>
+                    <div class="d-flex  TitleTable flex-column flex-md-row justify-content-center">
+                        <div class="d-flex justify-content-center">
+                            <div class="TitleTableP">
+                                <h3 class="m-4" style="font-weight: 600;">
+                                    HR USE ONLY 
+                                </h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <input type="hidden" name="candidate_request_id_hr_check" id="candidate_request_id_hr_check">
+                    <table class="w-100 mt-2 table-td-border">
+                        <tbody>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    Interviewer
+                                </td>
+                                <td id="hr_hire" class="td-font-size">
+                                    <label>Hire<input type="radio" class="m-0 hr_hire" name="hr_hire" value="hire" required></label>
+                                    <label>Do not Hire<input type="radio" class="m-0 do_not_hire" name="hr_hire" value="do_not_hire" required></label>
+                                </td>
+                                <td class="td-bg-blue">
+                                    Visa status (if in Qatar):
+                                </td>
+                                <td class="WidthCost10 td-font-size" id="visa_status">
+                                    <input type="text" name="visa_status" class="form-control visa_status" required></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    Location: Notice
+                                </td>
+                                <td class="WidthCost10 td-font-size" id="location">
+                                    <input type="text" name="location" class="form-control location" required></input>
+                                </td>
+                                <td class="td-bg-blue">
+                                    Marital Status: Work
+                                </td>
+                                <td class="WidthCost10 td-font-size" id="marital_status_work">
+                                    <input type="text" name="marital_status" class="form-control marital_status_work" required></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    Period:
+                                </td>
+                                <td class="WidthCost10 td-font-size" id="period">
+                                    <input type="text" name="period" class="form-control period" required></input>
+                                </td>
+                                <td class="td-bg-blue">
+                                    Status:
+                                </td>
+                                <td class="WidthCost10 td-font-size" id="status">
+                                    <input type="text" name="status" class="form-control status" required></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <table class="w-100 mt-2 table-td-border">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p>Recruitment Number:</p>
+                                                </td>
+                                                <td class="td-font-size" id="recruitment_number">
+                                                    <input type="text" name="recruitment_number" class="form-control recruitment_number"></input>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Visa Type:</p>
+                                                </td>
+                                                <td class="td-font-size" id="visa_type">
+                                                    <label>Work Visa<input type="radio" class="m-0 work_visa" name="visa_type" value="work_visa"></label>
+                                                    <label>Business Visa<input type="radio" class="m-0 business_visa" name="visa_type" value="business_visa"></label>
+                                                    <label>Multi VISA<input type="radio" class="m-0 multi_visa" name="visa_type" value="multi_visa"></label>
+                                                    <label>Others<input type="radio" class="m-0 others" name="visa_type" value="others"></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Comment:</p>
+                                                </td>
+                                                <td class="td-font-size" id="comment">
+                                                    <textarea name="commentHr" class="form-control commentHr" rows="3"></textarea>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    Expected Joining Date:
+                                </td>
+                                <td colspan="3" class="td-font-size" id="expected_joining_date">
+                                    <input type="date" name="expected_joining_date" class="form-control expected_joining_date" required></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    Designation Proposed:
+                                </td>
+                                <td colspan="3" class="td-font-size" id="designation_proposed">
+                                    <input type="text" name="designation_proposed" class="form-control designation_proposed" required></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    Variables 
+                                </td>
+                                <td class="td-bg-blue">
+                                    Current Salary  
+                                </td>
+                                <td class="td-bg-blue">
+                                    Expected Salary 
+                                </td>
+                                <td class="td-bg-blue">
+                                    Offered Salary 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    <p> Basic</p>
+                                </td>
+                                <td class="td-font-size" id="basic_current">
+                                    <input type="number" name="basic_current" class="form-control basic_current" required></input>
+                                </td>
+                                <td class="td-font-size" id="basic_expected">
+                                    <input type="number" name="basic_expected" class="form-control basic_expected" required></input>
+                                </td>
+                                <td class="td-font-size" id="basic_offered">
+                                    <input type="number" name="basic_offered" class="form-control basic_offered" required></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    <p> Accommodation</p>
+                                </td>
+                                <td class="td-font-size" id="accommodation_current">
+                                    <input type="number" name="accommodation_current" class="form-control accommodation_current" required></input>
+                                </td>
+                                <td class="td-font-size" id="accommodation_expected">
+                                    <input type="number" name="accommodation_expected" class="form-control accommodation_expected" required></input>
+                                </td>
+                                <td class="td-font-size" id="accommodation_offered">
+                                    <input type="number" name="accommodation_offered" class="form-control accommodation_offered" required></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    <p> Transportation</p>
+                                </td>
+                                <td class="td-font-size" id="transportation_current">
+                                    <input type="number" name="transportation_current" class="form-control transportation_current" required></input>
+                                </td>
+                                <td class="td-font-size" id="transportation_expected">
+                                    <input type="number" name="transportation_expected" class="form-control transportation_expected" required></input>
+                                </td>
+                                <td class="td-font-size" id="transportation_offered">
+                                    <input type="number" name="transportation_offered" class="form-control transportation_offered" required></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    <p> Fixed Over Time</p>
+                                </td>
+                                <td class="td-font-size" id="fixed_overtime_current" >
+                                    <input type="number" name="fixed_overtime_current" class="form-control fixed_overtime_current" required></input>
+                                </td>
+                                <td class="td-font-size" id="fixed_overtime_expected">
+                                    <input type="number" name="fixed_overtime_expected" class="form-control fixed_overtime_expected" required></input>
+                                </td>
+                                <td class="td-font-size" id="fixed_overtime_offered">
+                                    <input type="number" name="fixed_overtime_offered" class="form-control fixed_overtime_offered " required></input>
+                                </td>
+                            </tr>
+                            <tr>    
+                                <td class="td-bg-blue">
+                                    <p> Other Allowance</p>
+                                </td>
+                                <td class="td-font-size" id="other_allowance_current">
+                                    <input type="number" name="other_allowance_current" class="form-control other_allowance_current" required></input>
+                                </td>
+                                <td class="td-font-size" id="other_allowance_expected">
+                                    <input type="number" name="other_allowance_expected" class="form-control other_allowance_expected" required></input>
+                                </td>
+                                <td class="td-font-size" id="other_allowance_offered">
+                                    <input type="number" name="other_allowance_offered" class="form-control other_allowance_offered" required></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    <p> Special Allowance</p>
+                                </td>
+                                <td class="td-font-size" id="special_allowance_current">
+                                    <input type="number" name="special_allowance_current" class="form-control special_allowance_current" required></input>
+                                </td>
+                                <td class="td-font-size" id="special_allowance_expected">
+                                    <input type="number" name="special_allowance_expected" class="form-control special_allowance_expected" required></input>
+                                </td>
+                                <td class="td-font-size" id="special_allowance_offered">
+                                    <input type="number" name="special_allowance_offered" class="form-control special_allowance_offered" required></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    <p> allowance(if any)</p>
+                                </td>
+                                <td id="allowance_current" class="td-font-size">
+                                    <input type="number" name="allowance_current" class="form-control allowance_current" required></input>
+                                </td>
+                                <td id="allowance_expected" class="td-font-size">
+                                    <input type="number" name="allowance_expected" class="form-control allowance_expected" required></input>
+                                </td>
+                                <td id="allowance_offered" class="td-font-size">
+                                    <input type="number" name="allowance_offered" class="form-control allowance_offered" required></input>
+                                </td>
+                            </tr>
+                            <tr style="background-color:#feae9b" class="total_salary_tr">
+                                <td>
+                                    <p> Total Salary</p>
+                                </td>
+                                <td id="total_salary_current" class="td-font-size">
+                                    <input type="text" name="total_salary_current" disabled class="form-control total_salary_current" required></input>
+                                </td>
+                                <td id="total_salary_expected" class="td-font-size">
+                                    <input type="text" name="total_salary_expected" disabled class="form-control total_salary_expected" required></input>
+                                </td>
+                                <td id="total_salary_offered" class="td-font-size">
+                                    <input type="text" name="total_salary_offered" disabled class="form-control total_salary_offered" required></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    <p> Social Status</p>
+                                </td>
+                                <td id="social_status_current" class="td-font-size">
+                                    <input type="text" name="social_status_current" class="form-control social_status_current" required></input>
+                                </td>
+                                <td id="social_status_expected" class="td-font-size">
+                                    <input type="text" name="social_status_expected" class="form-control social_status_expected" required></input>
+                                </td>
+                                <td id="social_status_offered" class="td-font-size">
+                                    <input type="text" name="social_status_offered" class="form-control social_status_offered" required></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    <p> Ticket</p>
+                                </td>
+                                <td id="ticket_current" class="td-font-size">
+                                    <input type="text" name="ticket_current" class="form-control ticket_current" required></input>
+                                </td>
+                                <td id="ticket_expected" class="td-font-size">
+                                    <input type="text" name="ticket_expected" class="form-control ticket_expected" required></input>
+                                </td>
+                                <td id="ticket_offered" class="td-font-size">
+                                    <input type="text" name="ticket_offered" class="form-control ticket_offered" required></input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="d-flex my-4 TitleTable flex-column flex-md-row justify-content-center" id="submitHrCheck">
+                        <div class="candidate-btn">
+                            <button class="btn submitExp" type="submit">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="popupReturnReason">
+        <div class="popup-content popupEX-content" style="width: 40%;">
+            <div class="my-2 overflow-hidden table_responsev">
+                <span class="close" onclick="closePopupReturnReason()">&times;</span>
+                <div class="d-flex  TitleTable flex-column flex-md-row justify-content-center">
+                    <div class="d-flex justify-content-center">
+                        <div class="TitleTableP">
+                            <h3 class="m-4" style="font-weight: 600;">
+                                Return Reason
+                            </h3>
+                        </div>
+                    </div>
+                    
+                </div>
+                <input type="hidden" name="candidate_request_id_hr_reason" id="candidate_request_id_hr_reason">
+                <table class="w-100 mt-2 table-td-border">
+                    <tbody>
+                        <tr>
+                            <td style="width: 20%;">
+                                <p>HR Director Name:</p>
+                            </td>
+                            <td class="td-font-size" id="name_hr_reason" style="text-align: left !important;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Date:</p>
+                            </td>
+                            <td class="td-font-size" id="date_hr_reason" style="text-align: left !important;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Return to:</p>
+                            </td>
+                            <td class="td-font-size" id="return_to_hr_reason" style="text-align: left !important;">
+                            </td>
+                        </tr>
+                        <tr id="return_reason_hr_reason_tr">
+                            <td style="width: 20%;">
+                                <p>Return Reason:</p>
+                            </td>
+                            <td class="td-font-size" id="return_reason_hr_reason" style="text-align: left !important;" >
+                            </td>
+                        </tr>
+                        <tr id="other_hr_reason_tr">
+                            <td>
+                                <p>Other Reason:</p>
+                            </td>
+                            <td class="td-font-size" id="other_hr_reason" style="text-align: left !important;">
+                            </td>
+                        </tr>
+                        <tr id="comment_hr_reason_tr">
+                            <td>
+                                <p>Comment:</p>
+                            </td>
+                            <td class="td-font-size" id="comment_hr_reason" style="text-align: left !important;">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="popupImmigration">
+        <form action="https://mohamed-mahrous.com/employee/candidate/immigration/store" method="post" class="confirm-submit-immigration" novalidate>
+            <input type="hidden" name="_token" value="Nha3gNRMzOnnxUbaCWdiXwvEIo7yec9ke28bsKYx" autocomplete="off">            <div class="popup-content popupEX-content" style="width: 85%;">
+                <div class="" style="width: 100%;">
+                    <div class="img-fluid" style="width: 100%;">
+                        <img src="https://mohamed-mahrous.com/assets/images/logos/header.png" alt="header" style="width: 100%;" />
+                    </div>
+                </div>
+                <div class="my-2 overflow-hidden table_responsev" id="immigration_form">
+                    
+                    <span class="close" onclick="closePopupImmigration()">&times;</span>
+                    <div class="d-flex  TitleTable flex-column flex-md-row justify-content-center">
+                        <div class="d-flex justify-content-center">
+                            <div class="TitleTableP">
+                                <h3 class="m-4" style="font-weight: 600;">
+                                    Immigration Section
+                                </h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <input type="hidden" name="candidate_request_id_immigration" id="candidate_request_id_immigration">
+                    <table class="w-100 mt-2 table-td-border">
+                        <tbody>
+                            <tr>
+                                <td style="width: 20%;" class="td-bg-blue">
+                                    <p>Checking for visa available on MOI with Passport Number:</p>
+                                </td>
+                                <td class="td-font-size" id="recruitment_number_immigration">
+                                    <input type="text" name="recruitment_number" class="form-control recruitment_number_immigration" required></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    <p>Company Name:</p>
+                                </td>
+                                <td class="td-font-size" id="company_name_immigration">
+                                    <input type="text" name="company_name" class="form-control company_name_immigration" required></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    <p>VP Number:</p>
+                                </td>
+                                <td class="td-font-size" id="vp_number_immigration">
+                                    <input type="text" name="vp_number" class="form-control vp_number_immigration" required></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    <p>Designation:</p>
+                                </td>
+                                <td class="td-font-size" id="designation_immigration">
+                                    <input type="text" name="designation" class="form-control designation_immigration" required></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    <p>Balance Visas:</p>
+                                </td>
+                                <td class="td-font-size" id="balance_visas_immigration">
+                                    <input type="text" name="balance_visas" class="form-control balance_visas_immigration" required></input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-bg-blue">
+                                    <p>Remark (if Any):</p>
+                                </td>
+                                <td class="td-font-size" id="remark_immigration">
+                                    <textarea name="remark" class="form-control remark_immigration" required></textarea>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="d-flex my-4 TitleTable flex-column flex-md-row justify-content-center" id="submitImmigration">
+                        <div class="candidate-btn">
+                            <button class="btn submitExp" onclick="showAlert()">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <head>
+    <meta name="csrf-token" content="Nha3gNRMzOnnxUbaCWdiXwvEIo7yec9ke28bsKYx">
+</head>
+<style>
+    .floating-menu {
+        position: fixed;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-item {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
+
+    .contact-icon {
+        background-color: transparent; /* Changed from #4CAF50 to transparent */
+    }
+/* Create a hover bridge between button and submenu */
+.contact-icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 80px; /* Width of gap between button and submenu */
+    height: 120px; /* Give plenty of height for mouse movement */
+    background-color: transparent; /* Invisible bridge */
+    z-index: 990;
+}
+
+/* Delay the submenu disappearance */
+.enhanced-submenu {
+    transition: opacity 0.2s 0.15s; /* Small delay before hiding */
+    pointer-events: auto !important; /* Always allow interaction */
+}
+    .ai-icon {
+        background-color: transparent; /* Changed from #2196F3 to transparent */
+    }
+
+    .menu-item i {
+        color: white;
+        font-size: 28px;
+        position: relative;
+        z-index: 2; /* Ensure icon stays on top */
+    }
+
+    .submenu {
+        position: absolute;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: white;
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        display: none;
+        width: 200px;
+    }
+
+    .menu-item:hover {
+        transform: scale(1.05);
+    }
+
+    .menu-item:hover .submenu {
+        display: block;
+        animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateX(-10px) translateY(-50%);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0) translateY(-50%);
+        }
+    }
+
+    /* Add a subtle arrow to the submenu */
+    .submenu::after {
+        content: '';
+        position: absolute;
+        right: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-left: 10px solid white;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+    
+    /* SVG styles for 3D icons */
+    .menu-svg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1; /* Place behind the FontAwesome icon */
+    }
+    
+    /* Enhanced submenu styling */
+    .enhanced-submenu {
+        width: 280px !important;
+        padding: 0 !important;
+        overflow: hidden;
+        border-radius: 12px !important;
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15) !important;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    
+    .submenu-header {
+        background: linear-gradient(to right, #4CAF50, #3d9140);
+        padding: 15px 20px;
+        color: white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .submenu-header h3 {
+        margin: 0 0 5px 0;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: Arial, sans-serif;
+    }
+    
+    .submenu-header p {
+        margin: 0;
+        font-size: 12px;
+        opacity: 0.8;
+        font-family: Arial, sans-serif;
+    }
+    
+    .submenu-content {
+        padding: 10px 0;
+        background-color: white;
+    }
+    
+    .submenu-item {
+        display: flex;
+        align-items: center;
+        padding: 12px 16px !important;
+        transition: background-color 0.2s ease;
+        background-color: transparent;
+        border-left: 3px solid transparent;
+        margin-bottom: 0 !important;
+        text-decoration: none;
+    }
+    
+    .submenu-item:hover {
+        background-color: #f5f9f5 !important;
+        border-left: 3px solid #4CAF50;
+    }
+    
+    .submenu-icon-container {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
+    
+    .submenu-icon-container i {
+        font-size: 16px !important;
+        color: white !important;
+    }
+    
+    .phone-icon {
+        background: linear-gradient(135deg, #4CAF50, #2E7D32);
+        box-shadow: 0 3px 6px rgba(46, 125, 50, 0.2);
+    }
+    
+    .whatsapp-icon {
+        background: linear-gradient(135deg, #25D366, #128C7E);
+        box-shadow: 0 3px 6px rgba(18, 140, 126, 0.2);
+    }
+    
+    .email-icon {
+        background: linear-gradient(135deg, #EA4335, #C62828);
+        box-shadow: 0 3px 6px rgba(198, 40, 40, 0.2);
+    }
+    
+    .submenu-details {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .submenu-title {
+        font-weight: 600;
+        color: #333;
+        font-size: 14px;
+        margin-bottom: 2px;
+        font-family: Arial, sans-serif;
+    }
+    
+    .submenu-value {
+        color: #666;
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+    }
+    
+    .submenu-footer {
+        background-color: #f8f8f8;
+        padding: 10px 16px;
+        border-top: 1px solid #eee;
+    }
+    
+    .submenu-footer p {
+        margin: 0;
+        font-size: 12px;
+        color: #666;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+    
+    /* Special positioning and animation for enhanced submenu */
+    .enhanced-submenu::after {
+        content: '';
+        position: absolute;
+        right: -9px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-left: 9px solid white;
+        border-top: 9px solid transparent;
+        border-bottom: 9px solid transparent;
+        filter: drop-shadow(1px 0 1px rgba(0,0,0,0.1));
+    }
+</style>
+<style>
+    .ai-chat-modal {
+        display: none;
+        position: fixed;
+        right: 100px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 350px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        z-index: 1000;
+    }
+
+    .ai-chat-header {
+        padding: 15px;
+        background: linear-gradient(to right, #2196F3, #1976D2);
+        color: white;
+        border-radius: 15px 15px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ai-chat-messages {
+        height: 400px;
+        overflow-y: auto;
+        padding: 15px;
+        background: #f5f5f5;
+    }
+
+    .ai-chat-input {
+        padding: 15px;
+        border-top: 1px solid #eee;
+        display: flex;
+        gap: 10px;
+    }
+
+    .ai-chat-input input {
+        flex: 1;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 14px;
+        transition: border-color 0.2s ease;
+    }
+    
+    .ai-chat-input input:focus {
+        outline: none;
+        border-color: #2196F3;
+        box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.1);
+    }
+
+    .ai-chat-input button {
+        padding: 10px 20px;
+        background: #2196F3;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: background-color 0.2s ease;
+    }
+    
+    .ai-chat-input button:hover {
+        background: #1976D2;
+    }
+
+    .message {
+        margin: 10px 0;
+        padding: 12px 16px;
+        border-radius: 12px;
+        max-width: 80%;
+        line-height: 1.4;
+        font-size: 14px;
+    }
+
+    .user-message {
+        background: linear-gradient(135deg, #2196F3, #1976D2);
+        color: white;
+        margin-left: auto;
+        border-bottom-right-radius: 4px;
+    }
+
+    .ai-message {
+        background: white;
+        border: 1px solid #ddd;
+        border-bottom-left-radius: 4px;
+    }
+
+    .close-button {
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        opacity: 0.8;
+        transition: opacity 0.2s ease;
+    }
+    
+    .close-button:hover {
+        opacity: 1;
+    }
+</style>
+<div class="floating-menu">
+    <!-- Contact Icon with Enhanced Submenu -->
+    <div class="menu-item contact-icon">
+        <svg class="menu-svg" viewBox="0 0 200 200">
+            <defs>
+                <linearGradient id="contactGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#5fcc63" />
+                    <stop offset="100%" stop-color="#3a9d3e" />
+                </linearGradient>
+                <filter id="contactShadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.3" />
+                </filter>
+                <filter id="innerShadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur" />
+                    <feOffset dy="3" dx="0" result="offsetBlur" />
+                    <feComposite in="SourceGraphic" in2="offsetBlur" operator="over" />
+                </filter>
+            </defs>
+            
+            <circle cx="100" cy="100" r="80" fill="url(#contactGradient)" filter="url(#contactShadow)" />
+            
+            <path d="M100,30 a70,70 0 0,1 70,70 a70,70 0 0,1 -70,70" fill="none" stroke="white" stroke-width="10" stroke-opacity="0.2" />
+            
+            <g filter="url(#innerShadow)">
+                <rect x="60" y="55" width="80" height="90" rx="5" ry="5" fill="white" />
+                <rect x="70" y="55" width="60" height="90" rx="3" ry="3" fill="#eaeaea" />
+                
+                <line x1="70" y1="75" x2="130" y2="75" stroke="#cccccc" stroke-width="2" />
+                <line x1="70" y1="95" x2="130" y2="95" stroke="#cccccc" stroke-width="2" />
+                <line x1="70" y1="115" x2="130" y2="115" stroke="#cccccc" stroke-width="2" />
+                
+                <rect x="60" y="55" width="10" height="90" fill="#4CAF50" />
+                <circle cx="65" cy="75" r="3" fill="#3a9d3e" />
+                <circle cx="65" cy="95" r="3" fill="#3a9d3e" />
+                <circle cx="65" cy="115" r="3" fill="#3a9d3e" />
+            </g>
+        </svg>
+        <i class="fas fa-address-book"></i>
+        
+        <!-- Enhanced Contact Submenu -->
+        <div class="submenu enhanced-submenu">
+            <div class="submenu-header">
+                <h3>Contact Us</h3>
+                <p>Medgulf Construction Company</p>
+            </div>
+            
+            <div class="submenu-content">
+                <a href="tel:+97470589493" class="submenu-item">
+                    <div class="submenu-icon-container phone-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="submenu-details">
+                        <span class="submenu-title">Phone</span>
+                        <span class="submenu-value">+974 7058 9493</span>
+                    </div>
+                </a>
+                
+                <a href="https://wa.me/97470589493" class="submenu-item">
+                    <div class="submenu-icon-container whatsapp-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="submenu-details">
+                        <span class="submenu-title">WhatsApp</span>
+                        <span class="submenu-value">Direct Message</span>
+                    </div>
+                </a>
+                
+                <a href="mailto:hr2@medgulfconstruction.com" class="submenu-item">
+                    <div class="submenu-icon-container email-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="submenu-details">
+                        <span class="submenu-title">Email</span>
+                        <span class="submenu-value">hr2@medgulfconstruction.com</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="submenu-footer">
+                <p>Available 24/7</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Assistant Icon -->
+    <div class="menu-item ai-icon">
+        <svg class="menu-svg" viewBox="0 0 200 200">
+            <defs>
+                <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#4dabf5" />
+                    <stop offset="100%" stop-color="#1976D2" />
+                </linearGradient>
+                <filter id="aiShadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.3" />
+                </filter>
+                <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="2" result="blur" />
+                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+            </defs>
+            
+            <circle cx="100" cy="100" r="80" fill="url(#aiGradient)" filter="url(#aiShadow)" />
+            
+            <path d="M100,30 a70,70 0 0,1 70,70 a70,70 0 0,1 -70,70" fill="none" stroke="white" stroke-width="10" stroke-opacity="0.2" />
+            
+            <g filter="url(#glowEffect)">
+                <rect x="70" y="60" width="60" height="70" rx="10" ry="10" fill="white" />
+                
+                <circle cx="85" cy="85" r="8" fill="#2196F3" />
+                <circle cx="115" cy="85" r="8" fill="#2196F3" />
+                
+                <circle cx="83" cy="83" r="3" fill="white" />
+                <circle cx="113" cy="83" r="3" fill="white" />
+                
+                <rect x="80" y="105" width="40" height="10" rx="5" ry="5" fill="#2196F3" />
+                
+                <line x1="90" y1="60" x2="85" y2="45" stroke="#1976D2" stroke-width="3" />
+                <circle cx="85" cy="42" r="4" fill="#FF5252" />
+                
+                <line x1="110" y1="60" x2="115" y2="45" stroke="#1976D2" stroke-width="3" />
+                <circle cx="115" cy="42" r="4" fill="#FF5252" />
+            </g>
+        </svg>
+        <i class="fas fa-robot"></i>
+    </div>
+
+    <!-- Enhanced AI Chat Modal -->
+    <div class="ai-chat-modal" id="aiChatModal">
+        <div class="ai-chat-header">
+            <span>AI Assistant</span>
+            <button class="close-button">&times;</button>
+        </div>
+        <div class="ai-chat-messages" id="aiChatMessages"></div>
+        <div class="ai-chat-input">
+            <input type="text" placeholder="Type your message..." id="aiChatInput">
+            <button id="aiChatSend">Send</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Enhanced hover effects */
+    .menu-item:hover {
+        transform: scale(1.1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Pulse animation for AI icon */
+    @keyframes pulse {
+        0% { filter: drop-shadow(0 0 0 rgba(33, 150, 243, 0.4)); }
+        70% { filter: drop-shadow(0 0 10px rgba(33, 150, 243, 0.2)); }
+        100% { filter: drop-shadow(0 0 0 rgba(33, 150, 243, 0)); }
+    }
+
+    .ai-icon .menu-svg {
+        animation: pulse 2s infinite;
+    }
+
+    .submenu {
+        position: absolute;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: white;
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        display: none;
+        width: 200px;
+        z-index: 1001;
+    }
+
+    .menu-item:hover .submenu {
+        display: block;
+        animation: fadeIn 0.3s ease;
+    }
+
+    /* Enhanced AI chat modal positioning */
+    .ai-chat-modal {
+        display: none;
+        position: fixed;
+        right: 100px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 350px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        z-index: 1002; /* Ensure it's above other elements */
+    }
+
+    /* Added loading animation */
+    @keyframes typing {
+        0% { opacity: .2; }
+        20% { opacity: 1; }
+        100% { opacity: .2; }
+    }
+
+    .ai-typing {
+        display: flex;
+        gap: 4px;
+        padding: 10px;
+    }
+
+    .ai-typing span {
+        width: 8px;
+        height: 8px;
+        background: #2196F3;
+        border-radius: 50%;
+        animation: typing 1s infinite;
+    }
+
+    .ai-typing span:nth-child(2) { animation-delay: 0.2s; }
+    .ai-typing span:nth-child(3) { animation-delay: 0.4s; }
+</style>
+
+
+<script>
+    const aiIcon = document.querySelector('.ai-icon');
+    const aiChatModal = document.getElementById('aiChatModal');
+    const closeButton = document.querySelector('.close-button');
+    const messagesContainer = document.getElementById('aiChatMessages');
+    const chatInput = document.getElementById('aiChatInput');
+    const sendButton = document.getElementById('aiChatSend');
+
+    // Show/hide chat modal
+    aiIcon.addEventListener('click', function() {
+        aiChatModal.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', function() {
+        aiChatModal.style.display = 'none';
+    });
+
+    // Add typing indicator
+    function showTypingIndicator() {
+        const typing = document.createElement('div');
+        typing.className = 'ai-typing';
+        typing.innerHTML = '<span></span><span></span><span></span>';
+        messagesContainer.appendChild(typing);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        return typing;
+    }
+
+    function addMessage(message, isUser = false) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `message ${isUser ? 'user-message' : 'ai-message'}`;
+        messageDiv.textContent = message;
+        messagesContainer.appendChild(messageDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+
+    async function sendMessage() {
+        const message = chatInput.value.trim();
+        if (!message) return;
+
+        // Add user message
+        addMessage(message, true);
+        chatInput.value = '';
+
+        // Show typing indicator
+        const typingIndicator = showTypingIndicator();
+
+        try {
+            const response = await fetch('/ai-chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
+                },
+                body: JSON.stringify({ message })
+            });
+
+            // Remove typing indicator
+            typingIndicator.remove();
+
+            const data = await response.json();
+
+            if (data.success && data.response && data.response.choices && data.response.choices[0]) {
+                // Extract the message content from OpenAI's response format
+                const aiResponse = data.response.choices[0].message.content;
+                addMessage(aiResponse);
+            } else {
+                addMessage('Sorry, I encountered an error. Please try again.');
+            }
+        } catch (error) {
+            typingIndicator.remove();
+            console.error('Error:', error);
+            addMessage('Sorry, I encountered an error. Please try again.');
+        }
+    }
+
+    sendButton.addEventListener('click', sendMessage);
+    chatInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            sendMessage();
+        }
+    });
+
+    // Close modal when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!aiChatModal.contains(e.target) && !aiIcon.contains(e.target)) {
+            aiChatModal.style.display = 'none';
+        }
+    });
+
+    // Initialize with a welcome message
+    window.addEventListener('load', function() {
+        addMessage("Hello! I'm your AI assistant. How can I help you today?");
+    });
+</script></div>
+<div class="addEvent" id="modalAddEvent">
+    <form>
+        <div class="iconx" onclick="closeEvent()">
+            <i class="fa-solid fa-x"></i>
+        </div>
+        <div class="form-group">
+            <label for="eventTitle" id="labelTitle">
+                Title
+            </label>
+            <input type="text" placeholder="Event Title" class="form-control" id="eventTitle">
+        </div>
+        <div class="form-group">
+            <label for="eventDetails" id="labelDetails">
+                Details
+            </label>
+            <input type="text" placeholder="Event Details" class="form-control" id="eventDetails">
+        </div>
+        <div class="form-group">
+            <label for="eventDate" id="labelDate">
+                Date
+            </label>
+            <input type="date" placeholder="Event Date" class="form-control" id="eventDate">
+        </div>
+    </form>
+    <div class="butt w-100 d-flex align-items-center">
+        <button class="btn d-flex align-items-center mx-auto" id="submit-event-btn">
+            <p>
+                Submit
+            </p>
+            <div class="icon">
+                <i class="fa-solid fa-paper-plane"></i>
+            </div>
+        </button>
+    </div>
+</div>
+<!-- Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- jQuery -->
+<script src="https://mohamed-mahrous.com/assets/site/js/jquery-3.5.0.min.js"></script>
+
+<!-- Popper js -->
+<script src="https://mohamed-mahrous.com/assets/site/js/popper.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="https://mohamed-mahrous.com/assets/site/js/bootstrap.min.js"></script>
+
+<!-- Magnific popup js -->
+<script src="https://mohamed-mahrous.com/assets/site/js/jquery.magnific-popup.min.js"></script>
+
+<!-- jQuery easing js -->
+<script src="https://mohamed-mahrous.com/assets/site/js/jquery.easing.min.js"></script>
+
+<!-- Wow js -->
+<script src="https://mohamed-mahrous.com/assets/site/js/wow.min.js"></script>
+
+<!-- Owl carousel js -->
+<script src="https://mohamed-mahrous.com/assets/site/js/owl.carousel.min.js"></script>
+
+<!-- Countdown js -->
+<script src="https://mohamed-mahrous.com/assets/site/js/jquery.countdown.min.js"></script>
+
+<!-- Validator js -->
+<script src="https://mohamed-mahrous.com/assets/site/js/validator.min.js"></script>
+
+<!-- Custom js -->
+<script src="https://mohamed-mahrous.com/assets/site/js/scripts.js"></script>
+
+<!-- Main JS (admin) -->
+<script src="https://mohamed-mahrous.com/assets/admin/en/js/main.js"></script>
+
+<!-- Bootstrap 5.3.2 bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Popper.js Core (2.11.8) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+
+<!-- FullCalendar (6.1.14) -->
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js"></script>
+
+<!-- Select2 (4.0.13) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+<!-- New Assets -->
+<script src="https://mohamed-mahrous.com/assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://mohamed-mahrous.com/assets/js/all.min.js"></script>
+<script src="https://mohamed-mahrous.com/assets/js/dashboard.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/index.global.js"
+        integrity="sha512-3I+0zIxy2IkeeCvvhXUEu+AFT3zAGuHslHLDmM8JBv6FT7IW6WjhGpUZ55DyGXArYHD0NshixtmNUWJzt0K32w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Yield for additional scripts -->
+    <script src="https://mohamed-mahrous.com/assets/js/candidates.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Clear cache -->
+
+<script>
+    var textContainer = document.getElementById("textContainer");
+
+    // Get the content of the text container
+    var fullText = textContainer.innerText;
+
+    // Split the text into words
+    var words = fullText.split(' ');
+
+    // Take the first two words
+    var firstTwoWords = words.slice(0, 2).join(' ');
+
+    // Replace the content of the text container with the first two words
+    textContainer.innerText = firstTwoWords;
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            themeSystem: 'bootstrap5',
+            headerToolbar: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'monthViewButton,weekViewButton,dayViewButton'
+            },
+            customButtons: {
+                monthViewButton: {
+                    text: 'Month',
+                    click: function () {
+                        calendar.changeView('dayGridMonth');
+                        setActiveButton('monthViewButton');
+                    }
+                },
+                weekViewButton: {
+                    text: 'Week',
+                    click: function () {
+                        calendar.changeView('dayGridWeek');
+                        setActiveButton('weekViewButton');
+                    }
+                },
+                dayViewButton: {
+                    text: 'Day',
+                    click: function () {
+                        calendar.changeView('dayGridDay');
+                        setActiveButton('dayViewButton');
+                    }
+                }
+            },
+
+            events: [
+                                ]
+        });
+        calendar.render();
+
+        // تحديد الزر النشط افتراضياً
+        setActiveButton('monthViewButton');
+
+        // دالة لتحديد الزر النشط
+        function setActiveButton(buttonName) {
+            var buttons = ['monthViewButton', 'weekViewButton', 'dayViewButton'];
+            buttons.forEach(function (btn) {
+                var button = document.getElementById(btn);
+                if (button) {
+                    if (btn === buttonName) {
+                        button.classList.add('fc-button-active');
+                    } else {
+                        button.classList.remove('fc-button-active');
+                    }
+                }
+            });
+        }
+
+        var eventForm = document.getElementById('event-form');
+        var submitButton = document.getElementById('submit-button');
+        if (eventForm) {
+            eventForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                var title = document.getElementById('event-title').value;
+                var start = document.getElementById('event-start').value;
+                var close = document.getElementById('close');
+                if (title && start) {
+                    // calendar.addEvent({
+                    //     title: title,
+                    //     start: start
+                    // });
+                    alert(title);
+                    var eventModal = new bootstrap.Modal(document.getElementById('eventModal'));
+                    eventModal.hide();
+                    eventForm.reset();
+                }
+            });
+        }
+    });
+
+    $(document).ready(function () {
+        $('.exampleSelect').select2();
+    });
+
+    $(document).ready(function () {
+        $('.filterInput').on('input', function () {
+            var filterValue = $(this).val().toLowerCase();
+            $('.filter_row').each(function () {
+                var rowText = $(this).text().toLowerCase();
+                $(this).toggle(rowText.includes(filterValue));
+            });
+        });
+    });
+
+    const body = document.querySelector("body");
+    const sideBarLeft = document.querySelector(".sidebar_left");
+    const sideBarRight = document.querySelector(".sidebar_right");
+    const toggleBar = document.querySelector(".toggle_bar");
+    const toggleNews = document.querySelector(".toggle_news");
+    const toggleBarLogo = document.querySelector(".logo");
+    const toggleBarNews = document.querySelector(".news");
+    const content = document.querySelector(".body");
+
+    // Set the initial state
+    sideBarLeft.classList.remove("closee");
+    content.style.left = "250px";
+    content.style.width = "calc(100% - 350px)";
+
+    toggleBar.addEventListener("click", () => {
+        sideBarLeft.classList.toggle("closee");
+        toggleBarLogo.classList.toggle("closee");
+
+        if (sideBarLeft.classList.contains("closee") && !sideBarRight.classList.contains("closee")) {
+            content.style.left = "100px";
+            content.style.width = "calc(100% - 100px)";
+        } else if (sideBarRight.classList.contains("closee") && !sideBarLeft.classList.contains("closee")) {
+            content.style.left = "250px";
+            content.style.width = "calc(100% - 250px)";
+        } else if (sideBarRight.classList.contains("closee") && sideBarLeft.classList.contains("closee")) {
+            content.style.left = "100px";
+            content.style.width = "calc(100% - 100px)";
+        } else {
+            content.style.left = "250px";
+            content.style.width = "calc(100% - 250px)";
+        }
+    });
+
+    toggleNews.addEventListener("click", () => {
+        sideBarRight.classList.toggle("closee");
+        toggleBarNews.classList.toggle("closee");
+        if (sideBarLeft.classList.contains("closee") && !sideBarRight.classList.contains("closee")) {
+            content.style.left = "100px";
+            content.style.width = "calc(100% - 350px)";
+        } else if (sideBarRight.classList.contains("closee") && !sideBarLeft.classList.contains("closee")) {
+            content.style.left = "250px";
+            content.style.width = "calc(100% - 350px)";
+        } else if (sideBarRight.classList.contains("closee") && sideBarLeft.classList.contains("closee")) {
+            content.style.left = "100px";
+            content.style.width = "calc(100% - 100px)";
+        } else {
+            content.style.left = "250px";
+            content.style.width = "calc(100% - 250px)";
+        }
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const sidebarLinks = document.querySelectorAll('.nav_link a');
+
+        // Apply stored state on page load
+        const lastVisitedHref = localStorage.getItem('lastVisited');
+        if (lastVisitedHref) {
+            const lastVisitedLink = document.querySelector(`.nav_link a[href='${lastVisitedHref}']`);
+            if (lastVisitedLink) {
+                lastVisitedLink.parentElement.classList.add('visited');
+            }
+        }
+
+        // Handle click event to store state
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                // Remove visited class from all links
+                sidebarLinks.forEach(link => link.parentElement.classList.remove('visited'));
+
+                // Add visited class to the clicked link
+                const href = event.currentTarget.getAttribute('href');
+                localStorage.setItem('lastVisited', href);
+                event.currentTarget.parentElement.classList.add('visited');
+            });
+        });
+    });
+
+    document.querySelectorAll('.exportBtn').forEach(button => {
+        button.addEventListener('click', function () {
+            const tableID = this.getAttribute('data-table-id');
+            const exportType = this.getAttribute('data-export-type');
+
+            if (exportType === 'excel') {
+                exportTableToExcel(tableID);
+            } else if (exportType === 'csv') {
+                exportTableToCSV(tableID);
+            } else if (exportType === 'pdf') {
+                exportTableToPDF(tableID);
+            }
+        });
+    });
+
+    // Function to export table to Excel
+    function exportTableToExcel(tableID, filename = '') {
+        var downloadLink;
+        var dataType = 'application/vnd.ms-excel';
+        var tableSelect = document.getElementById(tableID);
+        var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+
+        // Specify file name
+        filename = filename ? filename : tableID + '_data.xls';
+
+        // Create download link element
+        downloadLink = document.createElement("a");
+
+        document.body.appendChild(downloadLink);
+
+        if (navigator.msSaveOrOpenBlob) {
+            var blob = new Blob(['\ufeff', tableHTML], {
+                type: dataType
+            });
+            navigator.msSaveOrOpenBlob(blob, filename);
+        } else {
+            // Create a link to the file
+            downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+
+            // Setting the file name
+            downloadLink.download = filename;
+
+            // Triggering the function
+            downloadLink.click();
+        }
+    }
+
+    // Function to export table to CSV
+    function exportTableToCSV(tableID, filename = '') {
+        var csv = [];
+        var rows = document.querySelectorAll(`#${tableID} tr`);
+
+        for (var i = 0; i < rows.length; i++) {
+            var row = [], cols = rows[i].querySelectorAll("td, th");
+
+            for (var j = 0; j < cols.length; j++)
+                row.push(cols[j].innerText);
+
+            csv.push(row.join(","));
+        }
+
+        // Download CSV file
+        filename = filename ? filename : tableID + '_data.csv';
+        downloadCSV(csv.join("\n"), filename);
+    }
+
+    function exportTableToCSV(tableID, filename = '') {
+        var csv = [];
+        var rows = document.querySelectorAll(`#${tableID} tr`);
+
+        for (var i = 0; i < rows.length; i++) {
+            var row = [];
+            var cols = rows[i].querySelectorAll("td, th");
+
+            for (var j = 0; j < cols.length; j++) {
+                var colspan = cols[j].getAttribute('colspan');
+                var cellValue = cols[j].innerText.trim();
+
+                // If the cell has a colspan, repeat the value for the number of columns
+                if (colspan) {
+                    for (var k = 0; k < parseInt(colspan); k++) {
+                        row.push(cellValue);
+                    }
+                } else {
+                    row.push(cellValue);
+                }
+            }
+
+            csv.push(row.join(","));
+        }
+
+        // Download CSV file
+        filename = filename ? filename : tableID + '_data.csv';
+        downloadCSV(csv.join("\n"), filename);
+    }
+
+    function downloadCSV(csv, filename) {
+        var csvFile;
+        var downloadLink;
+
+        // CSV file
+        csvFile = new Blob([csv], {type: "text/csv"});
+
+        // Download link
+        downloadLink = document.createElement("a");
+
+        // File name
+        downloadLink.download = filename;
+
+        // Create a link to the file
+        downloadLink.href = window.URL.createObjectURL(csvFile);
+
+        // Hide link
+        downloadLink.style.display = "none";
+
+        // Add the link to DOM
+        document.body.appendChild(downloadLink);
+
+        // Click download link
+        downloadLink.click();
+    }
+</script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <script src="https://mohamed-mahrous.com/assets/js/candidates.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

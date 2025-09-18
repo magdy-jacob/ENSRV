@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENSRV</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="../assets/css/recruitment_management.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- google font Syne-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet" />
+
+    <!-- google font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- google font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+    <style>
+        * {
+            font-family: 'Segoe UI', Roboto, Ubuntu, Helvetica, Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        label {
+            font-weight: 600 !important;
+            font-size: 16px !important;
+        }
+
+        li {
+            list-style: unset !important;
+        }
+
+        .LeaveTap_section .accordion .accordion-item .accordion-content.open {
+            padding: 15px;
+            border: 1px solid var(--success-dark-color);
+            max-height: fit-content;
+        }
+
+        .content {
+            padding-block-end: 50px;
+        }
+
+        .comments-section h2 {
+            padding: 10px;
+        }
+
+        .highlight-invalid:invalid {
+            border: 2px solid red !important;
+        }
+
+        input:valid,
+        select:valid,
+        textarea:valid {
+            border: 1px solid var(--success-dark-color) !important;
+        }
+
+        .form-select {
+            font-size: 16px !important;
+        }
+
+        .is-invalid {
+            border-color: #dc3545 !important;
+            outline: none;
+        }
+
+        .group-invalid {
+            box-shadow: 0 0 0 2px rgba(220, 53, 69, .3);
+            border-radius: 6px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="mainContent" class="content" style="width: 95%; margin: auto; background-color: #f4f0f0 !important;">
+        <div class="" style="width: 100%;">
+            <div class="img-fluid" style="width: 100%;">
+                <img src="../assets/images/logos/header.png" alt="header"
+                    style="width: 100%;" />
+            </div>
+        </div>
+        <main>
+            <article class="LeaveTap_section container">
+                <section class="accordion">
+                    <div class="accordion-item LeaveTap_section" style="border: 1px solid var(--main-blue-color); border-radius: 10px; padding: 20px; margin-bottom: 20px; margin-right: 20px; width: 99%; font-size: 16px;">
+                        <h2 style="text-align: center; color: var(--main-blue-color);">You Are Shortlisted </h2>
+                        <p class="text-left">
+                            <span>
+                                Dear <b>magdy</b>,
+                            </span>
+                            <br>
+                            <span>
+                                We are pleased to inform you that you have been shortlisted for the position of
+                                <b>Fronend</b>
+                            </span>
+                            <span>
+                                As part of our recruitment process, we kindly request you to complete some
+                                Pre‑Interview Information.
+                                This step is important to help us prepare for your interview and to ensure all
+                                required details are available in advance.
+                            </span>
+                            <span>
+                                <br>
+                                ✅ What you need to do:
+                            </span>
+                            <ul style="list-style-type: disc; padding-left: 20px;">
+                                <li>
+                                    Fill in the Pre‑Interview Information Form.
+                                </li>
+                                <li>
+                                    Upload all required documents (such as your updated CV, certificates, and any other
+                                    Documents files)
+                                </li>
+                            </ul>
+                            <span>
+                                Thank you for your time and effort. We look forward to receiving your information and
+                                meeting you soon.
+                            </span>
+                            <br>
+                            <span>
+                                Best regards,
+                            </span>
+                            <br>
+                            <span>
+                                <small>
+                                    ⚠️ Important Clarification:
+                                    Please note that being shortlisted means your CV and details have been reviewed and
+                                    will be considered for upcoming vacancies. This does not constitute final selection
+                                    for the position. If a suitable vacancy becomes available, our team will contact you
+                                    for the next steps in the recruitment process.
+                                </small>
+                            </span>
+                        </p>
+                    </div>
+                </section>
+                <section class="table_section workerChart HRExpensessTable th_td_last_child border-white table_responsev" style="display: block;">
+                    <div class="d-flex my-3 position-relative TitleTable flex-column flex-md-row justify-content-center">
+                        <div class="headTableExpenses">
+                            <div class="groupFilter">
+                                <div class="AddBtn">
+                                    <input type="number" class="form-control" id="rowCount" placeholder="Number of rows" min="1">
+                                    <button onclick="addRows()">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                            <path style="fill: white;" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
+                                        </svg>
+                                    </button>
+
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <div class="TitleTableP TitleTablePExpenses TitleTablePExpensesRequests TitleTablePExpensesManpower">
+                                        <p class="mb-0">Employment Send</p>
+                                    </div>
+                                </div>
+                                <div class="searchInput">
+                                    <input type="text" id="searchDesignation" class="form-control" placeholder="Search">
+                                    <div class="iconInput">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </svg>
+
+                                    </div>
+                                </div>
+                                <div id="navigationButtonsworkerRequests" class="navigationButtons tablenavigationButtons" style="display: none;">
+                                    <button onclick="prevHighlight('workerRequests')">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15 6L9 12L15 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <p><span id="numworkerRequests">1</span>/<span id="totalnumworkerRequests">8</span></p>
+                                    <button onclick="nextHighlight('workerRequests')">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 6L15 12L9 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-top-wrapper">
+                        <div class="scroll-top" id="scroll-top2" ></div>
+                    </div>
+                    <div class="scroll-container" id="scroll-container2">
+                        <table class="w-100 workerRequests">
+                            <thead>
+                              <tr>
+                                <th style="min-width: 60px">
+                                  <p>SR#</p>
+                                </th>
+                                <th style="min-width: 250px">
+                                  <p>Agent</p>
+                                </th>
+                                <th style="min-width: 250px">
+                                  <p>Candidate Name</p>
+                                </th>
+                                <th style="min-width: 250px">
+                                  <p>Nationality</p>
+                                </th>
+                                <th style="min-width: 250px">
+                                  <p>Designation</p>
+                                </th>
+                                <th style="min-width: 150px">
+                                  <p>DOB</p>
+                                </th>
+                                <th style="min-width: 250px">
+                                  <p>Email</p>
+                                </th>
+                                <th style="min-width: 150px">
+                                  <p>Mobile</p>
+                                </th>
+                                <th style="min-width: 100px">
+                                  <p>Age</p>
+                                </th>
+                                <th style="min-width: 100px">
+                                  <p>PPT#</p>
+                                </th>
+                                <th style="min-width: 150px">
+                                  <p>PPT Validity</p>
+                                </th>
+                                <th style="min-width: 100px">
+                                  <p>GCC Exp</p>
+                                </th>
+                                <th style="min-width: 100px">
+                                  <p>Local Exp</p>
+                                </th>
+                                <th style="min-width: 100px">
+                                  <p>Total Exp</p>
+                                </th>
+                                <th style="min-width: 150px">
+                                  <p>QVC Date</p>
+                                </th>
+                                <th style="min-width: 150px">
+                                  <p>QVC branch</p>
+                                </th>
+                                <th style="min-width: 150px">
+                                  <p>Sector</p>
+                                </th>
+                                <th style="min-width: 150px">
+                                  <p>Travel Date</p>
+                                </th>
+                                <th style="min-width: 250px">
+                                  <p>Passport copy</p>
+                                </th>
+                                <th style="min-width: 250px">
+                                  <p>Other Certificate</p>
+                                </th>
+                                <th style="min-width: 350px">
+                                  <p>Remarks</p>
+                                </th>
+                                <th style="min-width: 90px">
+                                  <p>Action</p>
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                              <tr class="international" style="display: table-row">
+                                <td>1</td>
+                                <td>
+                                    <input type="text" class="form-control" name="Agent1" id="Agent1">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="CandidateName1" id="CandidateName1">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="Nationality1" id="Nationality1">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="Designation1" id="Designation1">
+                                </td>
+                                <td>
+                                    <input type="date" class="form-control" name="DOB1" id="DOB1">
+                                </td>
+                                <td>
+                                    <input type="email" class="form-control" name="Email1" id="Email1">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="Mobile1" id="Mobile1">
+                                </td>
+                                <td>
+                                    <input type="number" class="form-control" name="Age1" id="Age1">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="PPT#1" id="PPT#1">
+                                </td>
+                                <td>
+                                    <input type="date" class="form-control" name="PPTValidity1" id="PPTValidity1">
+                                </td>
+                                <td>
+                                    <input type="number" class="form-control" name="GCCExp1" id="GCCExp1">
+                                </td>
+                                <td>
+                                    <input type="number" class="form-control" name="LocalExp1" id="LocalExp1">
+                                </td>
+                                <td>
+                                    <input type="number" class="form-control" name="TotalExp1" id="TotalExp1">
+                                </td>
+                                <td>
+                                    <input type="date" class="form-control" name="QVCDate1" id="QVCDate1">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="QVCbranch1" id="QVCbranch1">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="Sector1" id="Sector1">
+                                </td>
+                                <td>
+                                    <input type="date" class="form-control" name="TravelDate1" id="TravelDate1">
+                                </td>
+                                <td>
+                                    <input type="file" class="form-control" name="Passportcopy1" id="Passportcopy1">
+                                </td>
+                                <td>
+                                    <input type="file" class="form-control" name="OtherCertificate1" id="OtherCertificate1">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" name="Remarks1" id="Remarks1"></textarea>
+                                </td>
+                                <td>
+                                    
+                                </td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center gap-5 mt-5">
+                        <button class="btn btnTableSend btnSave" onclick="saveData()">Save</button>
+                        <button class="btn btnTableSend btnSubmit" onclick="submitData()">Submit</button>
+                    </div>
+                </section>
+            </article>
+        </main>
+    </div>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const searchFields = [ 
+            { inputId: 'searchDesignation', tableClass: 'workerRequests' },
+          ];
+  
+          searchFields.forEach(({ inputId, tableClass }) => {
+            document.getElementById(inputId).addEventListener('input', function () {
+              const searchValue = this.value.trim().toLowerCase();
+              highlightTextInTable(searchValue, tableClass);
+              
+            });
+          });
+        });
+  
+        const highlightData = {
+          workerRequests: { elements: [], index: 0 },
+          staffRequests: { elements: [], index: 0 }
+        };
+  
+        function highlightTextInTable(searchValue, tableClass) {
+            removeHighlights(tableClass);
+            const navButtons = document.getElementById(`navigationButtons${tableClass}`);
+            const data = highlightData[tableClass];
+            data.elements = [];
+            data.index = 0;
+            if (!searchValue || searchValue.length < 2){
+              removeHighlights(tableClass);
+              data.elements = [];
+              data.index = 0;
+              navButtons.style.display = 'none';
+              return
+            };
+            
+  
+            const tables = document.querySelectorAll(`.${tableClass}`);
+            tables.forEach(table => {
+                const cells = table.querySelectorAll('td, th');
+                cells.forEach(cell => {
+                    const cellText = cell.textContent.toLowerCase();
+                    if (cellText.includes(searchValue)) {
+                        cell.innerHTML = cell.innerHTML.replace(
+                            new RegExp(`(${escapeRegExp(searchValue)})`, 'gi'),
+                            '<span class="highlight">$1</span>'
+                        );
+                        cell.querySelectorAll('.highlight').forEach(el => {
+                          data.elements.push(el);
+                        });
+                    }
+                });
+            });
+            if (data.elements.length > 0 && searchValue.length >= 2) {
+                navButtons.style.display = 'flex';
+                scrollToHighlighted(data.elements[0]);
+  
+            } else {
+                navButtons.style.display = 'none';
+            }
+            updateNavigationUI(tableClass);
+  
+        }
+  
+     
+        function removeHighlights(tableClass) {
+          const highlights = document.querySelectorAll(`.${tableClass} .highlight`);
+          highlights.forEach(el => {
+            const parent = el.parentNode;
+            parent.textContent = parent.textContent; 
+          });
+        }
+  
+        function escapeRegExp(string) {
+          return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+  
+  
+        function scrollToHighlighted(element) {
+          if (!element) return;
+  
+          const table = element.closest('table');
+          const cell = element.closest('td, th'); 
+  
+          if (!cell || !table) return;
+  
+          const cellRect = cell.getBoundingClientRect();
+          const tableRect = table.getBoundingClientRect();
+  
+          const tableStyle = window.getComputedStyle(table);
+          const borderTop = parseInt(tableStyle.borderTopWidth) || 0;
+          const borderLeft = parseInt(tableStyle.borderLeftWidth) || 0;
+  
+          const scrollTop = cell.offsetTop - table.clientHeight / 2 + cell.offsetHeight / 2;
+          const scrollLeft = cell.offsetLeft - table.clientWidth / 2 + cell.offsetWidth / 2;
+  
+          table.scrollTo({
+            top: scrollTop,
+            left: scrollLeft,
+            behavior: 'smooth'
+          });
+  
+          document.querySelectorAll('.highlight').forEach(el => el.classList.remove('focused'));
+  
+          element.classList.add('focused');
+        }
+  
+        function nextHighlight(section) {
+            const data = highlightData[section];
+            if (data.index < data.elements.length - 1) {
+              data.index++;
+            } else{
+              data.index = 0;
+            }
+            updateNavigationUI(section);
+            scrollToHighlighted(data.elements[data.index]);
+  
+        }
+  
+        function prevHighlight(section) {
+          const data = highlightData[section];
+            if(data.index > 0){
+              data.index--;
+            }else{
+              data.index = data.elements.length - 1;
+            }
+            updateNavigationUI(section);
+            scrollToHighlighted(data.elements[data.index]);
+  
+        }
+  
+  
+        function updateNavigationUI(section) {
+            const data = highlightData[section];
+            document.getElementById(`num${section}`).textContent = (data.index + 1);
+            document.getElementById(`totalnum${section}`).textContent = data.elements.length;
+        }
+  
+  
+    </script>
+
+    <script>
+        const workertabel = document.querySelector(".workerChart");
+        const scrollTop2 = document.getElementById("scroll-top2");
+        const scrollContainer2 = document.getElementById("scroll-container2");
+        const table2 = scrollContainer2.querySelector(".workerRequests");
+        window.addEventListener('load', function () {
+            scrollTop2.style.width = table2.scrollWidth + "px";
+        });
+        scrollTop2.parentElement.addEventListener("scroll", (e) => {
+            scrollContainer2.scrollLeft = e.target.scrollLeft;
+        });
+        scrollContainer2.addEventListener("scroll", (e) => {
+            scrollTop2.parentElement.scrollLeft = e.target.scrollLeft;
+        });
+    </script>
+
+    <script>
+        let rowNumber = 2;
+    
+        function addRows() {
+        const count = parseInt(document.getElementById("rowCount").value) || 0;
+        const tbody = document.getElementById("tableBody");
+    
+        for (let i = 0; i < count; i++) {
+            const tr = document.createElement("tr");
+            tr.classList.add()
+            tr.innerHTML = `
+                <td>${rowNumber}</td>
+                <td><input type="text" class="form-control" name="Agent${rowNumber}"></td>
+                <td><input type="text" class="form-control" name="CandidateName${rowNumber}"></td>
+                <td><input type="text" class="form-control" name="Nationality${rowNumber}"></td>
+                <td><input type="text" class="form-control" name="Designation${rowNumber}"></td>
+                <td><input type="date" class="form-control" name="DOB${rowNumber}"></td>
+                <td><input type="email" class="form-control" name="Email${rowNumber}"></td>
+                <td><input type="text" class="form-control" name="Mobile${rowNumber}"></td>
+                <td><input type="number" class="form-control" name="Age${rowNumber}"></td>
+                <td><input type="text" class="form-control" name="PPT#${rowNumber}"></td>
+                <td><input type="date" class="form-control" name="PPTValidity${rowNumber}"></td>
+                <td><input type="number" class="form-control" name="GCCExp${rowNumber}"></td>
+                <td><input type="number" class="form-control" name="LocalExp${rowNumber}"></td>
+                <td><input type="number" class="form-control" name="TotalExp${rowNumber}"></td>
+                <td><input type="date" class="form-control" name="QVCDate${rowNumber}"></td>
+                <td><input type="text" class="form-control" name="QVCbranch${rowNumber}"></td>
+                <td><input type="text" class="form-control" name="Sector${rowNumber}"></td>
+                <td><input type="date" class="form-control" name="TravelDate${rowNumber}"></td>
+                <td><input type="file" class="form-control" name="Passportcopy${rowNumber}"></td>
+                <td><input type="file" class="form-control" name="OtherCertificate${rowNumber}"></td>
+                <td><textarea class="form-control" name="Remarks${rowNumber}"></textarea></td>
+                <td>
+                    <button type="button" onclick="deleteRow(this)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1Z"/>
+                        </svg>
+                    </button>
+                </td>
+            `;
+            tbody.appendChild(tr);
+            rowNumber++;
+        }
+        }
+    
+        function deleteRow(btn) {
+        const row = btn.closest("tr");
+        row.remove();
+        }
+        
+        document.addEventListener("keydown", function (e) {
+            const active = document.activeElement;
+
+            if (active && (active.tagName === "INPUT" || active.tagName === "TEXTAREA")) {
+                const td = active.closest("td");
+                const tr = td.closest("tr");
+                const allRows = Array.from(tr.parentElement.children);
+                const rowIndex = allRows.indexOf(tr);
+                const cells = Array.from(tr.children);
+                const colIndex = cells.indexOf(td);
+
+                let target = null;
+
+                switch (e.key) {
+                case "ArrowRight":
+                    if (colIndex < cells.length - 1) {
+                    target = cells[colIndex + 1].querySelector("input, textarea, select");
+                    }
+                    break;
+                case "ArrowLeft":
+                    if (colIndex > 0) {
+                    target = cells[colIndex - 1].querySelector("input, textarea, select");
+                    }
+                    break;
+                case "ArrowDown":
+                    if (rowIndex < allRows.length - 1) {
+                    const nextRow = allRows[rowIndex + 1];
+                    target = nextRow.children[colIndex]?.querySelector("input, textarea, select");
+                    }
+                    break;
+                case "ArrowUp":
+                    if (rowIndex > 0) {
+                    const prevRow = allRows[rowIndex - 1];
+                    target = prevRow.children[colIndex]?.querySelector("input, textarea, select");
+                    }
+                    break;
+                }
+
+                if (target) {
+                e.preventDefault(); 
+                target.focus();
+                }
+            }
+        });
+    </script>
+    <script>
+        function saveData() {
+            Swal.fire({
+                title: "Saved!",
+                text: "Your data has been saved successfully.",
+                icon: "success"
+            });
+        }
+
+        function submitData() {
+            Swal.fire({
+                title: "Submitted!",
+                text: "Your data has been submitted successfully.",
+                icon: "success"
+            });
+        }
+    </script>
+
+</body>
+
+</html>

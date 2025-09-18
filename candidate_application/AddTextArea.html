@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENSRV</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://hrplatformensrv.com/assets/css/bootstrap.min.css" />
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="../assets/css/recruitment_management.css" />
+
+
+    <!-- google font Syne-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet" />
+
+    <!-- google font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- google font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+    <style>
+        * {
+            font-family: 'Segoe UI', Roboto, Ubuntu, Helvetica, Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        label {
+            font-weight: 600 !important;
+            font-size: 16px !important;
+        }
+
+        li {
+            list-style: unset !important;
+        }
+
+        .LeaveTap_section .accordion .accordion-item .accordion-content.open {
+            padding: 15px;
+            border: 1px solid var(--success-dark-color);
+            max-height: fit-content;
+        }
+
+        .content {
+            padding-block-end: 50px;
+        }
+
+        .comments-section h2 {
+            padding: 10px;
+            background-color: #f4f0f0;
+        }
+
+        .highlight-invalid:invalid {
+            border: 2px solid red !important;
+        }
+
+        input:valid,
+        select:valid,
+        textarea:valid {
+            border: 1px solid var(--success-dark-color) !important;
+        }
+
+        .form-select {
+            font-size: 16px !important;
+        }
+
+        .form-control {
+            font-size: 16px !important;
+        }
+
+        .is-invalid {
+            border-color: #dc3545 !important;
+            outline: none;
+        }
+
+        .group-invalid {
+            box-shadow: 0 0 0 2px rgba(220, 53, 69, .3);
+            border-radius: 6px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="mainContent" class="content" style="width: 80%; margin: auto; background-color: #f4f0f0 !important;">
+        <div class="" style="width: 100%;">
+            <div class="img-fluid" style="width: 100%;">
+                <img src="https://hrplatformensrv.com/assets/images/logos/header.png" alt="header"
+                    style="width: 100%;" />
+            </div>
+        </div>
+        <main>
+            <article class="LeaveTap_section container">
+                <section class="accordion">
+                    <div class="accordion-item LeaveTap_section" style="border: 1px solid var(--main-blue-color); border-radius: 10px; padding: 20px; margin-bottom: 20px; margin-right: 20px; width: 99%; font-size: 16px;">
+                        <h2 style="text-align: center; color: var(--main-blue-color);">You Are Shortlisted </h2>
+                        <p class="text-left">
+                            <span>
+                                Dear <b>magdy</b>,
+                            </span>
+                            <br>
+                            <span>
+                                We are pleased to inform you that you have been shortlisted for the position of
+                                <b>Fronend</b>
+                            </span>
+                            <span>
+                                As part of our recruitment process, we kindly request you to complete some
+                                Pre‑Interview Information.
+                                This step is important to help us prepare for your interview and to ensure all
+                                required details are available in advance.
+                            </span>
+                            <span>
+                                <br>
+                                ✅ What you need to do:
+                            </span>
+                            <ul style="list-style-type: disc; padding-left: 20px;">
+                                <li>
+                                    Fill in the Pre‑Interview Information Form.
+                                </li>
+                                <li>
+                                    Upload all required documents (such as your updated CV, certificates, and any other
+                                    Documents files)
+                                </li>
+                            </ul>
+                            <span>
+                                Thank you for your time and effort. We look forward to receiving your information and
+                                meeting you soon.
+                            </span>
+                            <br>
+                            <span>
+                                Best regards,
+                            </span>
+                            <br>
+                            <span>
+                                <small>
+                                    ⚠️ Important Clarification:
+                                    Please note that being shortlisted means your CV and details have been reviewed and
+                                    will be considered for upcoming vacancies. This does not constitute final selection
+                                    for the position. If a suitable vacancy becomes available, our team will contact you
+                                    for the next steps in the recruitment process.
+                                </small>
+                            </span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="LeaveTap_section">
+                    <div class="accordion row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="accordion-item row">
+                                        <div class="col-12">
+                                            <h2 class="m-5"
+                                                style="text-align: center; color: var(--main-blue-color); font-weight: 600;">
+                                                Pre-Interview Required Information
+                                            </h2>
+                                        </div>
+                                        <div
+                                            class="accordion-content accordion-content-border col-12 col-md-6 filter_section my-0 leaveReqPadd open">
+
+                                            <div class="comments-section">
+                                                <label for="comments">Position Applied for:</label>
+                                                <input class="comments" type="text" name="position_applied_for"
+                                                    required />
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <h2
+                                                    style="text-align: center; color: var(--main-blue-color); font-weight: 600; font-size: 18px; text-decoration: underline;">
+                                                    GENERAL INFORMATION
+                                                </h2>
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label for="comments">Name:</label>
+                                                <input class="comments" type="text" name="name" required />
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label for="comments">Nationality:</label>
+                                                <input class="comments" type="text" name="passport" required />
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label for="comments">Passport Number:</label>
+                                                <input class="comments" type="text" name="passport_number"
+                                                    required />
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label for="comments">Passport Expiry Date:</label>
+                                                <input class="comments" type="date" name="passport_expiry_date"
+                                                    required />
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label for="comments">Date of Birth:</label>
+                                                <input class="comments" type="date" name="date_of_birth" required />
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label for="comments">Marital Status:</label>
+                                                <input class="comments" type="text" name="marital_status"
+                                                    required />
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label for="comments">Current Location:</label>
+                                                <input class="comments" type="text" name="current_location"
+                                                    required />
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label class="required form-label">Qatar Residency Permit
+                                                    Available</label>
+
+                                                <div class="d-flex SelectionsDiv">
+                                                    <div class="form-check d-flex flex-row gap-2 me-4 p-2"
+                                                        style="border-radius: 5px;">
+                                                        <input class="form-check-input-comments" type="radio"
+                                                            id="has_residency_yes" name="has_residency" value="yes"
+                                                            required />
+                                                        <label for="has_residency_yes" class="form-check-label"
+                                                            style="color:black!important;">Yes</label>
+                                                    </div>
+
+                                                    <div class="form-check d-flex flex-row gap-2 p-2"
+                                                        style="border-radius: 5px;">
+                                                        <input class="form-check-input-comments" type="radio"
+                                                            id="has_residency_no" name="has_residency" value="no"
+                                                            required />
+                                                        <label for="has_residency_no" class="form-check-label"
+                                                            style="color:black!important;">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Details shown only when "Yes" -->
+                                            <div id="residencyDetails" class="mt-3 d-none">
+                                                <label class="form-label">Qatar Residency Permit Status:</label>
+
+                                                <select id="residency_status" name="residency_status"
+                                                    class="form-select">
+                                                    <option value="" selected disabled>— Select status —</option>
+                                                    <option
+                                                        value="On Residency Permit (more than one year with same sponsor)">
+                                                        On Residency Permit (more than one year with same sponsor)
+                                                    </option>
+                                                    <option
+                                                        value="On Residency Permit (less than one year with same sponsor)">
+                                                        On Residency Permit (less than one year with same sponsor)
+                                                    </option>
+                                                    <option value="Visit Visa / Business Visa / Family Visit Visa">
+                                                        Visit Visa / Business Visa / Family Visit Visa
+                                                    </option>
+                                                    <option value="other">Other</option>
+                                                </select>
+
+                                                <input type="text" id="residency_status_other"
+                                                    name="residency_status_other" class="form-control mt-2 d-none"
+                                                    placeholder="Please specify" value="" />
+                                            </div>
+
+                                            <!-- Contact Info -->
+                                            <div class="comments-section">
+                                                <label for="contact_number">Contact Number:</label>
+                                                <input class="comments" type="text" name="contact_number"
+                                                    required />
+                                            </div>
+                                            <div class="comments-section">
+                                                <label for="email">Email:</label>
+                                                <input class="comments" type="email" name="email" required />
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label class="required form-label">Driving Licence:</label>
+
+                                                <div class="d-flex SelectionsDiv">
+                                                    <div class="form-check d-flex flex-row gap-2 me-4 p-2"
+                                                        style="border-radius: 5px;">
+                                                        <input class="form-check-input-comments" type="radio"
+                                                            id="driving_license_yes" name="driving_license"
+                                                            value="yes" required />
+                                                        <label for="driving_license_yes" class="form-check-label"
+                                                            style="color:black!important;">Yes</label>
+                                                    </div>
+
+                                                    <div class="form-check d-flex flex-row gap-2 p-2"
+                                                        style="border-radius: 5px;">
+                                                        <input class="form-check-input-comments" type="radio"
+                                                            id="driving_license_no" name="driving_license"
+                                                            value="no" required />
+                                                        <label for="driving_license_no" class="form-check-label"
+                                                            style="color:black!important;">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Languages -->
+                                            <div class="comments-section">
+                                                <label>Languages Spoken:</label>
+                                                <div class="d-flex flex-row gap-2">
+                                                    <input class="comments" type="text" name="language_1"
+                                                        placeholder="Language 1" required />
+                                                    <input class="comments" type="text" name="language_2"
+                                                        placeholder="Language 2" />
+                                                    <input class="comments" type="text" name="language_3"
+                                                        placeholder="Language 3" />
+                                                </div>
+                                            </div>
+
+                                            <!-- Education -->
+                                            <div class="comments-section">
+                                                <label for="education">Highest Education Degree:</label>
+                                                <input class="comments" type="text" name="education" required />
+                                            </div>
+
+                                            <!-- Experience -->
+                                            <div class="comments-section">
+                                                <div class="d-flex flex-row gap-4">
+                                                    <div class="w-50">
+                                                        <label for="experience_total">Total years of
+                                                            experience:</label>
+                                                        <input class="comments" type="text" name="experience_total"
+                                                            required />
+                                                    </div>
+                                                    <div class="w-50">
+                                                        <label for="experience_gcc">Total GCC Experience:</label>
+                                                        <input class="comments" type="text" name="experience_gcc"
+                                                            required />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Current Employment Details -->
+                                            <div class="comments-section">
+                                                <h2
+                                                    style="text-align: center; color: var(--main-blue-color); font-weight: 600; font-size: 18px; text-decoration: underline;">
+                                                    CURRENT EMPLOYMENT DETAILS</h2>
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label for="job_title">Current Job Title:</label>
+                                                <input class="comments" type="text" name="current_job_title"
+                                                    required />
+                                            </div>
+                                            <div class="comments-section">
+                                                <label for="employer">Current Employer:</label>
+                                                <input class="comments" type="text" name="current_employer"
+                                                    required />
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Basic salary:</label>
+                                                <input class="comments" type="number" name="current_basic_salary"
+                                                    required />
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Accommodation:</label>
+                                                <input class="comments" type="number" name="current_accommodation"
+                                                    required />
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Transportation:</label>
+                                                <input class="comments" type="number" name="current_transportation"
+                                                    required />
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Fixed Over Time:</label>
+                                                <input class="comments" type="number" name="current_overtime"
+                                                    required />
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Other Allowance:</label>
+                                                <input class="comments" type="number" name="current_other_allowance"
+                                                    required />
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Special Allowance:</label>
+                                                <input class="comments" type="number"
+                                                    name="current_special_allowance" required />
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Allowance (if any):</label>
+                                                <input class="comments" type="number" name="current_allowance"
+                                                    required />
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Total Salary:</label>
+                                                <input class="comments" type="text"
+                                                    id="current_total_salary_display" readonly />
+                                                <input type="hidden" name="current_total_salary"
+                                                    id="current_total_salary">
+                                            </div>
+                                            <div class="comments-section">
+                                                <label class="required form-label">Annual Ticket:</label>
+
+                                                <div class="d-flex SelectionsDiv">
+                                                    <div class="form-check d-flex flex-row gap-2 me-4 p-2"
+                                                        style="border-radius: 5px;">
+                                                        <input class="form-check-input-comments" type="radio"
+                                                            id="annual_ticket_self" name="current_ticket"
+                                                            value="Self" required />
+                                                        <label for="annual_ticket_self" class="form-check-label"
+                                                            style="color:black!important;">Self</label>
+                                                    </div>
+
+                                                    <div class="form-check d-flex flex-row gap-2 p-2"
+                                                        style="border-radius: 5px;">
+                                                        <input class="form-check-input-comments" type="radio"
+                                                            id="annual_ticket_family" name="current_ticket"
+                                                            value="Family" required />
+                                                        <label for="annual_ticket_family" class="form-check-label"
+                                                            style="color:black!important;">Family</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-content col-12 col-md-6 leaveReqPadd open">
+                                            <div class="comments-section">
+                                                <label>Social Status:</label>
+                                                <input class="comments" type="text" name="current_social_status"
+                                                    required />
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label>Reasons for leaving Employer:</label>
+                                                <textarea class="comments" type="text"
+                                                    name="current_reasons_leaving" required></textarea>
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Notice Period (if required):</label>
+                                                <input class="comments" type="text" name="current_notice_period"
+                                                    required />
+                                            </div>
+                                            <!-- Salary Expectations -->
+                                            <div class="comments-section">
+                                                <h2
+                                                    style="text-align: center; color: var(--main-blue-color); font-weight: 600; font-size: 18px; text-decoration: underline;">
+                                                    SALARY EXPECTATIONS</h2>
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label>Basic salary:</label>
+                                                <input class="comments" type="number"
+                                                    name="expectations_basic_salary" required />
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Accommodation:</label>
+                                                <input class="comments" type="number"
+                                                    name="expectations_accommodation" required />
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Transportation:</label>
+                                                <input class="comments" type="number"
+                                                    name="expectations_transportation" required />
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Fixed Over Time:</label>
+                                                <input class="comments" type="number" name="expectations_overtime"
+                                                    required />
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Other Allowance:</label>
+                                                <input class="comments" type="number"
+                                                    name="expectations_other_allowance" required />
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Special Allowance:</label>
+                                                <input class="comments" type="number"
+                                                    name="expectations_special_allowance" required />
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Allowance (if any):</label>
+                                                <input class="comments" type="number" name="expectations_allowance"
+                                                    required />
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Total Salary:</label>
+                                                <input class="comments" type="text"
+                                                    id="expectations_total_salary_display" readonly />
+                                                <input type="hidden" name="expectations_total_salary"
+                                                    id="expectations_total_salary">
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label class="required form-label">
+                                                    Annual Ticket:
+                                                </label>
+
+                                                <div class="d-flex SelectionsDiv">
+                                                    <div class="form-check d-flex flex-row gap-2 me-4 p-2"
+                                                        style="border-radius: 5px;">
+                                                        <input class="form-check-input-comments" type="radio"
+                                                            value="Self" id="annual_ticket_self1"
+                                                            name="expectations_ticket" required />
+                                                        <label for="annual_ticket_self1"
+                                                            class="form-check-label">Self</label>
+                                                    </div>
+
+                                                    <div class="form-check d-flex flex-row gap-2 p-2"
+                                                        style="border-radius: 5px;">
+                                                        <input class="form-check-input-comments" type="radio"
+                                                            value="Family" id="annual_ticket_family1"
+                                                            name="expectations_ticket" required />
+                                                        <label for="annual_ticket_family1"
+                                                            class="form-check-label">Family</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Social Status:</label>
+                                                <input class="comments" type="text"
+                                                    name="expectations_social_status" required />
+                                            </div>
+
+                                            <!-- References -->
+                                            <div class="comments-section">
+                                                <h2
+                                                    style="text-align: center; color: var(--main-blue-color); font-weight: 600; font-size: 18px; text-decoration: underline;">
+                                                    REFERENCES</h2>
+                                            </div>
+                                            <div class="comments-section">
+                                                <label>Please provide 3 references with contact details:</label>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label style="color: black !important;">Contact
+                                                            Name:</label>
+                                                        <input class="comments mb-2" type="text" name="ref_name_1"
+                                                            placeholder="Contact Name 1" required />
+                                                        <input class="comments mb-2" type="text" name="ref_name_2"
+                                                            placeholder="Contact Name 2" required />
+                                                        <input class="comments mb-2" type="text" name="ref_name_3"
+                                                            placeholder="Contact Name 3" required />
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label style="color: black !important;">Contact Detail
+                                                            (email or phone no.):</label>
+                                                        <input class="comments mb-2" type="text"
+                                                            name="ref_contact_1" placeholder="Contact Detail 1"
+                                                            required />
+                                                        <input class="comments mb-2" type="text"
+                                                            name="ref_contact_2" placeholder="Contact Detail 2"
+                                                            required />
+                                                        <input class="comments mb-2" type="text"
+                                                            name="ref_contact_3" placeholder="Contact Detail 3"
+                                                            required />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Declaration -->
+                                            <div class="comments-section">
+                                                <h2
+                                                    style="text-align: center; color: var(--main-blue-color); font-weight: 600; font-size: 18px; text-decoration: underline;">
+                                                    DECLARATION</h2>
+                                            </div>
+                                            <div class="comments-section">
+                                                <label class="required form-label">
+                                                    Do you have any relatives currently employed with Medgulf
+                                                    Construction Co?
+                                                </label>
+
+                                                <div class="d-flex SelectionsDiv">
+                                                    <div class="form-check d-flex flex-row gap-2 me-4 p-2"
+                                                        style="border-radius: 5px;">
+                                                        <input class="form-check-input-comments" type="radio"
+                                                            value="yes" id="has_relative_yes"
+                                                            name="has_relative_in_company" required />
+                                                        <label for="has_relative_yes"
+                                                            class="form-check-label">Yes</label>
+                                                    </div>
+
+                                                    <div class="form-check d-flex flex-row gap-2 p-2"
+                                                        style="border-radius: 5px;">
+                                                        <input class="form-check-input-comments" type="radio"
+                                                            value="no" id="has_relative_no"
+                                                            name="has_relative_in_company" required />
+                                                        <label for="has_relative_no"
+                                                            class="form-check-label">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Hide this by default -->
+                                            <div class="comments-section d-none" id="relativeDetailsWrap">
+                                                <label style="color: black !important;">
+                                                    If Yes, kindly state Name, Emp. ID # and Department:
+                                                </label>
+                                                <input class="comments" type="text" name="relative_details"
+                                                    id="relativeDetailsInput" />
+                                            </div>
+
+
+                                            <div class="comments-section">
+                                                <label for="comments">Upload updated CV:</label>
+                                                <label for="cv-upload"
+                                                    class="signature-upload-title point p-2 w-100  d-flex justify-content-center align-items-center ">
+                                                    <div
+                                                        class="d-flex iconUploadText flex-column align-items-center ">
+                                                        <div class="iconUpload d-flex align-items-center">
+                                                            <span>Upload Attachment</span>
+                                                            <div class="iconUploadDis">
+                                                                <div class="divuploa">
+                                                                    <i class="fas fa-upload ms-2"></i>
+                                                                </div>
+                                                                <div class="divcheck">
+                                                                    <i class="fa-solid fa-circle-check ms-2"
+                                                                        style="color: #42b26b;"></i>
+                                                                </div>
+                                                            </div>
+                                                            <input type="file" id="cv-upload" name="cv_attachment"
+                                                                class=" file-input" required>
+                                                        </div>
+                                                        <!-- <p id="file-name" class="mb-0 file-name">No file selected</p> -->
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label for="comments">Educational Certificate:</label>
+                                                <label for="educational-certificate-upload"
+                                                    class="signature-upload-title point p-2 w-100  d-flex justify-content-center align-items-center ">
+                                                    <div
+                                                        class="d-flex iconUploadText flex-column align-items-center ">
+                                                        <div class="iconUpload d-flex align-items-center">
+                                                            <span>Upload Attachment</span>
+                                                            <div class="iconUploadDis">
+                                                                <div class="divuploa">
+                                                                    <i class="fas fa-upload ms-2"></i>
+                                                                </div>
+                                                                <div class="divcheck">
+                                                                    <i class="fa-solid fa-circle-check ms-2"
+                                                                        style="color: #42b26b;"></i>
+                                                                </div>
+                                                            </div>
+                                                            <input type="file" id="educational-certificate-upload"
+                                                                name="educational_certificate" class="file-input"
+                                                                required>
+                                                        </div>
+                                                        <!-- <p id="file-name" class="mb-0 file-name">No file selected</p> -->
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label for="comments">Other certificates:</label>
+                                                <label for="other-certificates-upload"
+                                                    class="signature-upload-title point p-2 w-100  d-flex justify-content-center align-items-center ">
+                                                    <div
+                                                        class="d-flex iconUploadText flex-column align-items-center ">
+                                                        <div class="iconUpload d-flex align-items-center">
+                                                            <span>Upload Attachment</span>
+                                                            <div class="iconUploadDis">
+                                                                <div class="divuploa">
+                                                                    <i class="fas fa-upload ms-2"></i>
+                                                                </div>
+                                                                <div class="divcheck">
+                                                                    <i class="fa-solid fa-circle-check ms-2"
+                                                                        style="color: #42b26b;"></i>
+                                                                </div>
+                                                            </div>
+                                                            <input type="file" id="other-certificates-upload"
+                                                                name="other_certificates" class="file-input"
+                                                                required>
+                                                        </div>
+                                                        <!-- <p id="file-name" class="mb-0 file-name">No file selected</p> -->
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label for="comments">Upload Passport:</label>
+                                                <label for="passport-upload"
+                                                    class="signature-upload-title point p-2 w-100  d-flex justify-content-center align-items-center ">
+                                                    <div
+                                                        class="d-flex iconUploadText flex-column align-items-center ">
+                                                        <div class="iconUpload d-flex align-items-center">
+                                                            <span>Upload Attachment</span>
+                                                            <div class="iconUploadDis">
+                                                                <div class="divuploa">
+                                                                    <i class="fas fa-upload ms-2"></i>
+                                                                </div>
+                                                                <div class="divcheck">
+                                                                    <i class="fa-solid fa-circle-check ms-2"
+                                                                        style="color: #42b26b;"></i>
+                                                                </div>
+                                                            </div>
+                                                            <input type="file" id="passport-upload"
+                                                                name="passport_upload" class="file-input" required>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            <div class="comments-section">
+                                                <label for="comments">Personal Photo:</label>
+                                                <label for="personal-photo-upload"
+                                                    class="signature-upload-title point p-2 w-100  d-flex justify-content-center align-items-center ">
+                                                    <div
+                                                        class="d-flex iconUploadText flex-column align-items-center ">
+                                                        <div class="iconUpload d-flex align-items-center">
+                                                            <span>Upload Attachment</span>
+                                                            <div class="iconUploadDis">
+                                                                <div class="divuploa">
+                                                                    <i class="fas fa-upload ms-2"></i>
+                                                                </div>
+                                                                <div class="divcheck">
+                                                                    <i class="fa-solid fa-circle-check ms-2"
+                                                                        style="color: #42b26b;"></i>
+                                                                </div>
+                                                            </div>
+                                                            <input type="file" id="personal-photo-upload"
+                                                                name="personal_photo" class="file-input"
+                                                                accept=".jpg,.jpeg,.png" required>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            
+
+                                        </div>
+                                        <div class="accordion-content col-12 leaveReqPadd open">
+                                            <div class="comments-section">
+                                                <label for="comments">Remarks</label>
+                                                <div 
+                                                    id="editor" 
+                                                    style="height: 200px;" 
+                                                    class="comments"  
+                                                    name="other_comment_upload"
+                                                    required
+                                                ></div>
+                                            </div>
+                                        </div>
+                                        <p style="text-align: center; font-size: 14px; font-weight: bold;">I confirm
+                                            that all the information stated above is true and correct. I understand
+                                            that providing false or misleading information may result in rejection
+                                            of my application.
+                                        </p>
+
+                                        <div
+                                            class="accordion-content d-flex justify-content-center align-items-center accordion-content-border col-12 filter_section my-0 leaveReqPadd open">
+                                            <button type="submit" class="btn btnSubmit">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+        </main>
+    </div>
+
+    <!-- bootstrap -->
+    <script src="https://hrplatformensrv.com/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://hrplatformensrv.com/assets/js/candidates_application.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script>
+      var quill = new Quill('#editor', {
+        theme: 'snow' 
+      });
+    </script>
+</body>
+
+</html>
